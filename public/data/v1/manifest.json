@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ethics-v01-manifest",
+  "kind": "dataset-manifest",
+  "releaseVersion": "0.1.0",
+  "schemaDirectory": "schemas/v1",
+  "evidenceAsOf": "2026-11-16T02:50:16Z",
+  "generator": {
+    "id": "ethics-materialize",
+    "version": "1.0.0",
+    "codeSha256": "14f651b7c1915009dd01566d01a6eb760ed57301fbe41d34cc2054592aa93505"
+  },
+  "files": [
+    {
+      "path": "data/v1/observatory.json",
+      "sha256": "52abed5f5ba391738901cb76e490072220f2547cfe6117e5dd10f8d746f4aefb",
+      "bytes": 119410
+    }
+  ],
+  "recordCounts": {
+    "datasets": 3,
+    "metrics": 3,
+    "observations": 7,
+    "evidence": 3,
+    "claims": 3,
+    "visualizations": 3,
+    "organizations": 15,
+    "sources": 32,
+    "publications": 13,
+    "perspectives": 10
+  },
+  "sourceAttributions": [
+    {
+      "id": "iea",
+      "title": "IEA · Energy and AI",
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "licenseNotes": "CC BY 4.0 for this report, subject to IEA terms and third-party exclusions. Attribute IEA (2025), Energy and AI."
+    },
+    {
+      "id": "berkeley-lab",
+      "title": "Berkeley Lab publications",
+      "url": "https://eta-publications.lbl.gov/",
+      "licenseNotes": "Item-specific rights; no full reports redistributed."
+    },
+    {
+      "id": "doe",
+      "title": "DOE · U.S. data-center energy report summary",
+      "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "licenseNotes": "Official U.S. government factual summary; check third-party exceptions. Only short attributed evidence excerpts retained."
+    },
+    {
+      "id": "eia",
+      "title": "EIA Open Data",
+      "url": "https://www.eia.gov/opendata/",
+      "licenseNotes": "U.S. government data; review dataset-specific attribution and API conditions."
+    },
+    {
+      "id": "epa-egrid",
+      "title": "EPA eGRID",
+      "url": "https://www.epa.gov/egrid",
+      "licenseNotes": "U.S. government data with dataset-specific notes. No workbook redistributed."
+    },
+    {
+      "id": "usgs-water",
+      "title": "USGS Water Use",
+      "url": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+      "licenseNotes": "U.S. government data; check each dataset’s terms and method."
+    },
+    {
+      "id": "ecologits",
+      "title": "EcoLogits",
+      "url": "https://ecologits.ai/latest/",
+      "licenseNotes": "Project documentation and code have separate terms; inspect linked repository license before reuse."
+    },
+    {
+      "id": "codecarbon",
+      "title": "CodeCarbon",
+      "url": "https://docs.codecarbon.io/latest/",
+      "licenseNotes": "MIT-licensed software; documentation and input data may have separate terms."
+    },
+    {
+      "id": "ai-energy-score",
+      "title": "AI Energy Score",
+      "url": "https://huggingface.github.io/AIEnergyScore/",
+      "licenseNotes": "Benchmark code/data have specific licenses; inspect each release. No dataset mirrored."
+    },
+    {
+      "id": "mlcommons",
+      "title": "MLCommons",
+      "url": "https://mlcommons.org/",
+      "licenseNotes": "Benchmark-specific terms and rules apply. Link only."
+    },
+    {
+      "id": "green-software",
+      "title": "Green Software Foundation",
+      "url": "https://greensoftware.foundation/",
+      "licenseNotes": "Resource-specific licenses; link only."
+    },
+    {
+      "id": "epoch",
+      "title": "Epoch AI data",
+      "url": "https://epoch.ai/data",
+      "licenseNotes": "Dataset-specific terms; do not assume every dataset is freely redistributable."
+    },
+    {
+      "id": "ai-index",
+      "title": "Stanford AI Index 2025",
+      "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "licenseNotes": "Report reuse and underlying third-party data have separate terms. Only two attributed factual endpoints and a short excerpt retained."
+    },
+    {
+      "id": "openalex",
+      "title": "OpenAlex",
+      "url": "https://openalex.org/",
+      "licenseNotes": "OpenAlex metadata is CC0; API budgets/authentication policies apply."
+    },
+    {
+      "id": "mit-risk",
+      "title": "MIT AI Risk Repository",
+      "url": "https://airisk.mit.edu/",
+      "licenseNotes": "Repository-specific licensing and taxonomy limitations apply. Link only."
+    },
+    {
+      "id": "fmti",
+      "title": "Foundation Model Transparency Index",
+      "url": "https://crfm.stanford.edu/fmti/December-2025/index.html",
+      "licenseNotes": "Report and underlying data terms vary; link only."
+    },
+    {
+      "id": "oecd",
+      "title": "OECD AI Policy Observatory",
+      "url": "https://oecd.ai/en/",
+      "licenseNotes": "OECD dataset-specific terms; no dataset mirrored."
+    },
+    {
+      "id": "aiid",
+      "title": "AI Incident Database",
+      "url": "https://incidentdatabase.ai/",
+      "licenseNotes": "Incident reports and database exports have specific terms. No reports copied."
+    },
+    {
+      "id": "avid",
+      "title": "AVID",
+      "url": "https://avidml.org/",
+      "licenseNotes": "Database and report-specific terms; link only."
+    },
+    {
+      "id": "nist",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "licenseNotes": "U.S. government framework; preserve attribution and third-party exceptions."
+    },
+    {
+      "id": "copyright",
+      "title": "Copyright and Artificial Intelligence",
+      "url": "https://www.copyright.gov/ai/",
+      "licenseNotes": "Official U.S. government reports and guidance; linked submissions may have third-party copyright."
+    },
+    {
+      "id": "ilo",
+      "title": "Generative AI and Jobs: refined occupational exposure index",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "licenseNotes": "ILO publication-specific license and terms; link only."
+    },
+    {
+      "id": "osi",
+      "title": "Open Source AI Definition",
+      "url": "https://opensource.org/ai",
+      "licenseNotes": "Definition and site-specific licenses; inspect linked terms."
+    },
+    {
+      "id": "c2pa",
+      "title": "Coalition for Content Provenance and Authenticity",
+      "url": "https://c2pa.org/",
+      "licenseNotes": "Specification and implementation licenses differ; link only."
+    },
+    {
+      "id": "fda",
+      "title": "FDA AI-enabled medical devices",
+      "url": "https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices",
+      "licenseNotes": "U.S. government list with scope notes; no device database mirrored."
+    },
+    {
+      "id": "crossref",
+      "title": "Crossref REST API",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "licenseNotes": "Bibliographic facts are available for reuse through the public REST API; abstracts and full text have separate rights and are not retained."
+    },
+    {
+      "id": "akashic-ai",
+      "title": "Akashic · Artificial Intelligence",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "licenseNotes": "Curated link collection; destination resources have their own terms."
+    },
+    {
+      "id": "akashic-research",
+      "title": "Akashic · Research",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "licenseNotes": "Curated link collection; destination resources have their own terms."
+    },
+    {
+      "id": "akashic-creative",
+      "title": "Akashic · Creative Resources",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "licenseNotes": "Curated link collection; each asset/tool has separate terms."
+    },
+    {
+      "id": "promptfoo",
+      "title": "Promptfoo",
+      "url": "https://www.promptfoo.dev/",
+      "licenseNotes": "Software and services have separate license/access terms."
+    },
+    {
+      "id": "c2pa-tool",
+      "title": "C2PA Tool",
+      "url": "https://opensource.contentauthenticity.org/docs/sdk-repos/c2patool/",
+      "licenseNotes": "Implementation-specific software licenses; inspect repository release."
+    },
+    {
+      "id": "osf",
+      "title": "Open Science Framework",
+      "url": "https://osf.io/",
+      "licenseNotes": "Project content and platform terms differ; hosted features may require accounts."
+    }
+  ],
+  "limitations": [
+    "Selected evidence, not a comprehensive assessment of AI.",
+    "Report values are manually transcribed and agent checked; independent human evidence review is pending.",
+    "Data-center totals include non-AI activity. Projections are conditional; API price is not energy.",
+    "Research metadata is a reading queue, not validated findings. Scheduled discovery changes remain candidates."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethics.egohygiene.io/schemas/v1/source.schema.json",
+  "title": "Ethics v1 source",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "title",
+    "publisher",
+    "url",
+    "accessMode",
+    "automated",
+    "accessNotes",
+    "licenseNotes",
+    "updatePolicy",
+    "topics",
+    "availability",
+    "lastAttemptAt",
+    "freshness",
+    "review"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "kind": {
+      "const": "source"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "accessMode": {
+      "enum": [
+        "automated_dataset",
+        "manual_report",
+        "reference_only"
+      ]
+    },
+    "automated": {
+      "type": "boolean"
+    },
+    "accessNotes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "licenseNotes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "updatePolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "availability": {
+      "enum": [
+        "accessible",
+        "blocked",
+        "unavailable"
+      ]
+    },
+    "lastAttemptAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "freshness": {
+      "$ref": "common.schema.json#/$defs/freshness"
+    },
+    "review": {
+      "$ref": "common.schema.json#/$defs/review"
+    }
+  },
+  "additionalProperties": false
+}

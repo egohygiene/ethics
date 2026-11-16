@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethics.egohygiene.io/schemas/v1/visualization.schema.json",
+  "title": "Ethics v1 visualization",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "title",
+    "datasetId",
+    "dimension",
+    "question",
+    "takeaway",
+    "transformId",
+    "transformVersion",
+    "scale",
+    "axisMax",
+    "limitations",
+    "claimIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "kind": {
+      "const": "visualization"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "datasetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dimension": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "takeaway": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transformId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transformVersion": {
+      "const": "1.0.0"
+    },
+    "scale": {
+      "enum": [
+        "linear",
+        "log10"
+      ]
+    },
+    "axisMax": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "claimIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

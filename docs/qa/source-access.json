@@ -1,0 +1,294 @@
+{
+  "checkedAt": "2026-11-16T02:30:46Z",
+  "note": "One-time source link/access checks, not a declaration of claim accuracy or blanket automation permission. Browser-only redirects manually inspected. See registry for permitted automated access.",
+  "results": [
+    {
+      "id": "iea",
+      "requestedUrl": "https://www.iea.org/reports/energy-and-ai",
+      "checkedAt": "2026-11-16T02:20:32.787367+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.iea.org/reports/energy-and-ai",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "berkeley-lab",
+      "requestedUrl": "https://eta-publications.lbl.gov/",
+      "checkedAt": "2026-11-16T02:20:32.788264+00:00",
+      "status": 200,
+      "resolvedUrl": "https://eta-publications.lbl.gov/",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "eia",
+      "requestedUrl": "https://www.eia.gov/opendata/",
+      "checkedAt": "2026-11-16T02:20:32.788752+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.eia.gov/opendata/",
+      "bytesRead": 72033,
+      "accessible": true
+    },
+    {
+      "id": "epa-egrid",
+      "requestedUrl": "https://www.epa.gov/egrid",
+      "checkedAt": "2026-11-16T02:20:32.789158+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.epa.gov/egrid",
+      "bytesRead": 61266,
+      "accessible": true
+    },
+    {
+      "id": "usgs-water",
+      "requestedUrl": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+      "checkedAt": "2026-11-16T02:20:32.789513+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "ecologits",
+      "requestedUrl": "https://ecologits.ai/latest/",
+      "checkedAt": "2026-11-16T02:20:32.790331+00:00",
+      "status": 200,
+      "resolvedUrl": "https://ecologits.ai/latest/",
+      "bytesRead": 69674,
+      "accessible": true
+    },
+    {
+      "id": "codecarbon",
+      "requestedUrl": "https://docs.codecarbon.io/latest/",
+      "checkedAt": "2026-11-16T02:20:33.040501+00:00",
+      "accessible": true,
+      "resolvedUrl": "https://docs.codecarbon.io/latest/",
+      "status": 200,
+      "bytesRead": 50000
+    },
+    {
+      "id": "ai-energy-score",
+      "requestedUrl": "https://huggingface.github.io/AIEnergyScore/",
+      "checkedAt": "2026-11-16T02:20:33.085373+00:00",
+      "status": 200,
+      "resolvedUrl": "https://huggingface.github.io/AIEnergyScore/",
+      "bytesRead": 75230,
+      "accessible": true
+    },
+    {
+      "id": "mlcommons",
+      "requestedUrl": "https://mlcommons.org/",
+      "checkedAt": "2026-11-16T02:20:33.113171+00:00",
+      "status": 200,
+      "resolvedUrl": "https://mlcommons.org/",
+      "bytesRead": 161574,
+      "accessible": true
+    },
+    {
+      "id": "green-software",
+      "requestedUrl": "https://greensoftware.foundation/",
+      "checkedAt": "2026-11-16T02:20:33.155736+00:00",
+      "status": 200,
+      "resolvedUrl": "https://greensoftware.foundation/",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "epoch",
+      "requestedUrl": "https://epoch.ai/data",
+      "checkedAt": "2026-11-16T02:20:33.253869+00:00",
+      "status": 200,
+      "resolvedUrl": "https://epoch.ai/data",
+      "bytesRead": 118246,
+      "accessible": true
+    },
+    {
+      "id": "ai-index",
+      "requestedUrl": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "checkedAt": "2026-11-16T02:20:33.281344+00:00",
+      "status": 200,
+      "resolvedUrl": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "openalex",
+      "requestedUrl": "https://openalex.org/",
+      "checkedAt": "2026-11-16T02:20:33.412426+00:00",
+      "status": 200,
+      "resolvedUrl": "https://openalex.org/",
+      "bytesRead": 6606,
+      "accessible": true
+    },
+    {
+      "id": "mit-risk",
+      "requestedUrl": "https://airisk.mit.edu/",
+      "checkedAt": "2026-11-16T02:20:33.470780+00:00",
+      "status": 200,
+      "resolvedUrl": "https://airisk.mit.edu/",
+      "bytesRead": 59304,
+      "accessible": true
+    },
+    {
+      "id": "fmti",
+      "requestedUrl": "https://crfm.stanford.edu/fmti/",
+      "checkedAt": "2026-11-16T02:20:33.552033+00:00",
+      "status": 200,
+      "resolvedUrl": "https://crfm.stanford.edu/fmti/December-2025/index.html",
+      "bytesRead": 171,
+      "accessible": true
+    },
+    {
+      "id": "oecd",
+      "requestedUrl": "https://oecd.ai/",
+      "checkedAt": "2026-11-16T02:20:33.571402+00:00",
+      "status": 200,
+      "resolvedUrl": "https://oecd.ai/en/",
+      "bytesRead": 122512,
+      "accessible": true
+    },
+    {
+      "id": "aiid",
+      "requestedUrl": "https://incidentdatabase.ai/",
+      "checkedAt": "2026-11-16T02:20:33.701495+00:00",
+      "status": 200,
+      "resolvedUrl": "https://incidentdatabase.ai/",
+      "bytesRead": 130094,
+      "accessible": true
+    },
+    {
+      "id": "avid",
+      "requestedUrl": "https://avidml.org/",
+      "checkedAt": "2026-11-16T02:20:33.798314+00:00",
+      "status": 200,
+      "resolvedUrl": "https://avidml.org/",
+      "bytesRead": 10392,
+      "accessible": true
+    },
+    {
+      "id": "nist",
+      "requestedUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "checkedAt": "2026-11-16T02:20:34.004058+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "bytesRead": 92867,
+      "accessible": true
+    },
+    {
+      "id": "copyright",
+      "requestedUrl": "https://www.copyright.gov/ai/",
+      "checkedAt": "2026-11-16T02:20:34.022678+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.copyright.gov/ai/",
+      "bytesRead": 44066,
+      "accessible": true
+    },
+    {
+      "id": "ilo",
+      "requestedUrl": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "checkedAt": "2026-11-16T02:20:34.120396+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "bytesRead": 57865,
+      "accessible": true
+    },
+    {
+      "id": "osi",
+      "requestedUrl": "https://opensource.org/ai/",
+      "checkedAt": "2026-11-16T02:20:34.122361+00:00",
+      "status": 200,
+      "resolvedUrl": "https://opensource.org/ai",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "c2pa",
+      "requestedUrl": "https://c2pa.org/",
+      "checkedAt": "2026-11-16T02:20:34.125426+00:00",
+      "status": 200,
+      "resolvedUrl": "https://c2pa.org/",
+      "bytesRead": 92410,
+      "accessible": true
+    },
+    {
+      "id": "fda",
+      "requestedUrl": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices",
+      "checkedAt": "2026-11-16T02:20:34.222814+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "crossref",
+      "requestedUrl": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "checkedAt": "2026-11-16T02:20:34.498193+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "bytesRead": 70732,
+      "accessible": true
+    },
+    {
+      "id": "doe",
+      "requestedUrl": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "checkedAt": "2026-11-16T02:20:34.500005+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "bytesRead": 121623,
+      "accessible": true
+    },
+    {
+      "id": "akashic-ai",
+      "requestedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "checkedAt": "2026-11-16T02:20:34.624541+00:00",
+      "status": 200,
+      "resolvedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "akashic-research",
+      "requestedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "checkedAt": "2026-11-16T02:20:34.664675+00:00",
+      "status": 200,
+      "resolvedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "akashic-creative",
+      "requestedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "checkedAt": "2026-11-16T02:20:34.775896+00:00",
+      "status": 200,
+      "resolvedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "bytesRead": 200000,
+      "accessible": true
+    },
+    {
+      "id": "promptfoo",
+      "requestedUrl": "https://www.promptfoo.dev/",
+      "checkedAt": "2026-11-16T02:20:34.783760+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.promptfoo.dev/",
+      "bytesRead": 53794,
+      "accessible": true
+    },
+    {
+      "id": "c2pa-tool",
+      "requestedUrl": "https://opensource.contentauthenticity.org/docs/c2patool/",
+      "checkedAt": "2026-11-16T02:20:34.901246+00:00",
+      "accessible": true,
+      "resolvedUrl": "https://opensource.contentauthenticity.org/docs/sdk-repos/c2patool/",
+      "status": 200,
+      "bytesRead": 340
+    },
+    {
+      "id": "osf",
+      "requestedUrl": "https://osf.io/",
+      "checkedAt": "2026-11-16T02:20:35.119181+00:00",
+      "status": 200,
+      "resolvedUrl": "https://osf.io/",
+      "bytesRead": 4207,
+      "accessible": true
+    }
+  ]
+}
