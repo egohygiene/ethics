@@ -50,4 +50,4 @@ Reproduce with `npm run build` and `CHROMIUM_PATH=/usr/bin/chromium npm run qa:s
 
 The maintainer merged PR #7 and configured the site. Main-branch quality and Pages deployment workflows both passed. The HTTPS site, build revision, public JSON hash, and live desktop/mobile interactions were verified separately from these local tests. See [the public receipt](public-deployment.md), [machine-readable checks](public-deployment.json), and live [desktop](screenshots/live-desktop.png) / [mobile](screenshots/live-mobile.png) screenshots.
 
-This deployment does not refresh the underlying historical report values or imply human evidence review. Current operational limits, including HTTPS enforcement and refresh-PR policy visibility, are explicit in the receipt. Future PRs require owner approval before merge.
+This deployment does not refresh the underlying historical report values or imply human evidence review. The receipt confirms HTTPS enforcement and redirects, and preserves remaining operational limits such as refresh-PR policy visibility. Future PRs require owner approval before merge.

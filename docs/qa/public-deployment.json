@@ -87,9 +87,39 @@
     "buildType": "workflow",
     "customDomain": "ethics.egohygiene.io",
     "certificateState": "approved",
-    "httpsEnforced": false,
-    "configurationCheckedAt": "2026-11-16T04:51:16.253576+00:00",
-    "enforcementChangeAttempt": "GitHub API rejected the available integration with HTTP 403. Maintainer action requested; HTTPS itself is serving successfully."
+    "httpsEnforced": true,
+    "configurationCheckedAt": "2026-11-16T04:55:48.137068+00:00",
+    "enforcementChangeAttempt": "The maintainer enabled Enforce HTTPS after the integration received HTTP 403. GitHub reports enforcement active; public homepage, index.html and build.json GET requests return HTTP 301 to HTTPS.",
+    "httpsEnforcementVerifiedAt": "2026-11-16T04:56:47.026185+00:00",
+    "httpRedirectChecks": [
+      {
+        "checkedAt": "2026-11-16T04:56:46.378687+00:00",
+        "url": "http://ethics.egohygiene.io/",
+        "method": "GET",
+        "status": 301,
+        "location": "https://ethics.egohygiene.io/",
+        "age": "0",
+        "cache": "MISS"
+      },
+      {
+        "checkedAt": "2026-11-16T04:56:46.476209+00:00",
+        "url": "http://ethics.egohygiene.io/index.html",
+        "method": "GET",
+        "status": 301,
+        "location": "https://ethics.egohygiene.io/index.html",
+        "age": "59",
+        "cache": "HIT"
+      },
+      {
+        "checkedAt": "2026-11-16T04:56:46.556268+00:00",
+        "url": "http://ethics.egohygiene.io/build.json",
+        "method": "GET",
+        "status": 301,
+        "location": "https://ethics.egohygiene.io/build.json",
+        "age": "101",
+        "cache": "HIT"
+      }
+    ]
   },
   "dns": {
     "addresses": [
@@ -107,5 +137,6 @@
     "revision": "c1c737b71d7d477119882fc1b08873b7e6666f50",
     "workflowUrl": "https://github.com/egohygiene/ethics/actions/runs/43805838083",
     "qualityWorkflowUrl": "https://github.com/egohygiene/ethics/actions/runs/43805838133"
-  }
+  },
+  "publicHashRecheckedAt": "2026-11-16T04:56:47.026185+00:00"
 }

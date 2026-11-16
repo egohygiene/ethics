@@ -39,7 +39,7 @@ Use `CHROMIUM_PATH=/usr/bin/chromium npm run test:browser` if a system Chromium 
 
 **Live:** https://ethics.egohygiene.io
 
-[PR #7](https://github.com/egohygiene/ethics/pull/7) was merged by the maintainer. The first public deployment was verified on 2026-11-15 (America/New_York): the HTTPS site serves the approved merge commit `c1c737b71d7d477119882fc1b08873b7e6666f50`, the downloaded evidence matches its SHA-256 manifest, and live desktop/mobile interactions pass. Both the [deployment](https://github.com/egohygiene/ethics/actions/runs/43805838083) and [quality](https://github.com/egohygiene/ethics/actions/runs/43805838133) workflows passed.
+[PR #7](https://github.com/egohygiene/ethics/pull/7) was merged by the maintainer. The first public deployment was verified on 2026-11-15 (America/New_York): the HTTPS site serves the approved merge commit `c1c737b71d7d477119882fc1b08873b7e6666f50`, the downloaded evidence matches its SHA-256 manifest, and live desktop/mobile interactions pass. HTTPS enforcement is enabled, and HTTP requests redirect to HTTPS. Both the [deployment](https://github.com/egohygiene/ethics/actions/runs/43805838083) and [quality](https://github.com/egohygiene/ethics/actions/runs/43805838133) workflows passed.
 
 See the [public verification receipt](docs/qa/public-deployment.md) and [deployment guide](docs/deployment.md) for the exact checks, HTTPS enforcement status, and remaining operational limits. Software publication does not constitute independent human evidence review; that remains pending.
 

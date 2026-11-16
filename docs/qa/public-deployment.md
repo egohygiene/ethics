@@ -42,6 +42,7 @@ Chromium checked the public HTTPS origin with normal certificate validation, wit
 
 ## Operational status
 
-HTTPS is serving successfully and GitHub reports the domain certificate approved. At the recorded check, `https_enforced` was **false** and HTTP also returned 200. The available integration's attempt to enable enforcement was rejected with **HTTP 403, “Resource not accessible by integration.”** The maintainer has been asked to enable **Settings → Pages → Enforce HTTPS**; HTTP-to-HTTPS redirection is not claimed verified yet.
+HTTPS is serving successfully and GitHub reports the domain certificate approved. The maintainer enabled **Enforce HTTPS**, and the Pages API confirms `https_enforced: true`. Public GET requests to the homepage, `/index.html`, and `/build.json` each return **HTTP 301** with a matching HTTPS location. The HTTPS build revision and dataset hash were rechecked successfully at `2026-11-16T04:56:46Z`.
+
 
 Actions-based publication and the custom domain are configured. Visibility into the repository setting allowing refresh PR creation remains unavailable to the integration (HTTP 403); the refresh code is implemented and the bounded discovery adapter was tested, but the first scheduled PR has not been observed. Independent human evidence/content review, Firefox/Safari testing, and an actual measured workflow experiment remain follow-on work.
