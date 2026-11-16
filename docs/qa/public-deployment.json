@@ -1,0 +1,142 @@
+{
+  "verifiedAt": "2026-11-16T04:47:40.088829+00:00",
+  "base": "https://ethics.egohygiene.io",
+  "resources": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 979,
+      "url": "https://ethics.egohygiene.io/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/build.json",
+      "status": 200,
+      "bytes": 142,
+      "url": "https://ethics.egohygiene.io/build.json",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/data/v1/manifest.json",
+      "status": 200,
+      "bytes": 8929,
+      "url": "https://ethics.egohygiene.io/data/v1/manifest.json",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/data/v1/observatory.json",
+      "status": 200,
+      "bytes": 119410,
+      "url": "https://ethics.egohygiene.io/data/v1/observatory.json",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "bytes": 322,
+      "url": "https://ethics.egohygiene.io/favicon.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "/schemas/v1/observation.schema.json",
+      "status": 200,
+      "bytes": 1780,
+      "url": "https://ethics.egohygiene.io/schemas/v1/observation.schema.json",
+      "contentType": "application/json; charset=utf-8"
+    }
+  ],
+  "build": {
+    "builtAt": "2026-11-16T04:44:17.853Z",
+    "revision": "c1c737b71d7d477119882fc1b08873b7e6666f50",
+    "dirty": false,
+    "version": "0.1.0"
+  },
+  "observatorySha256": "52abed5f5ba391738901cb76e490072220f2547cfe6117e5dd10f8d746f4aefb",
+  "hashVerified": true,
+  "recordCounts": {
+    "datasets": 3,
+    "metrics": 3,
+    "observations": 7,
+    "evidence": 3,
+    "claims": 3,
+    "visualizations": 3,
+    "organizations": 15,
+    "sources": 32,
+    "publications": 13,
+    "perspectives": 10
+  },
+  "browserVerification": {
+    "verifiedAt": "2026-11-16T04:48:50.854Z",
+    "url": "https://ethics.egohygiene.io/",
+    "checks": [
+      "HTTPS page, seven sections and three charts",
+      "Published exact-value table and source projection",
+      "Evidence-lens filter and explicit coverage gap",
+      "Conceptual calculator, reversible scenario and reset",
+      "Live perspective selection",
+      "Live research search",
+      "Dark/light theme switching",
+      "Mobile selector, no overflow and reduced motion",
+      "No page errors or unexpected third-party requests"
+    ],
+    "pageErrors": [],
+    "externalRequests": [],
+    "browser": "151.0.7922.173"
+  },
+  "pages": {
+    "buildType": "workflow",
+    "customDomain": "ethics.egohygiene.io",
+    "certificateState": "approved",
+    "httpsEnforced": true,
+    "configurationCheckedAt": "2026-11-16T04:55:48.137068+00:00",
+    "enforcementChangeAttempt": "The maintainer enabled Enforce HTTPS after the integration received HTTP 403. GitHub reports enforcement active; public homepage, index.html and build.json GET requests return HTTP 301 to HTTPS.",
+    "httpsEnforcementVerifiedAt": "2026-11-16T04:56:47.026185+00:00",
+    "httpRedirectChecks": [
+      {
+        "checkedAt": "2026-11-16T04:56:46.378687+00:00",
+        "url": "http://ethics.egohygiene.io/",
+        "method": "GET",
+        "status": 301,
+        "location": "https://ethics.egohygiene.io/",
+        "age": "0",
+        "cache": "MISS"
+      },
+      {
+        "checkedAt": "2026-11-16T04:56:46.476209+00:00",
+        "url": "http://ethics.egohygiene.io/index.html",
+        "method": "GET",
+        "status": 301,
+        "location": "https://ethics.egohygiene.io/index.html",
+        "age": "59",
+        "cache": "HIT"
+      },
+      {
+        "checkedAt": "2026-11-16T04:56:46.556268+00:00",
+        "url": "http://ethics.egohygiene.io/build.json",
+        "method": "GET",
+        "status": 301,
+        "location": "https://ethics.egohygiene.io/build.json",
+        "age": "101",
+        "cache": "HIT"
+      }
+    ]
+  },
+  "dns": {
+    "addresses": [
+      "185.199.108.153",
+      "185.199.109.153",
+      "185.199.110.153",
+      "185.199.111.153"
+    ],
+    "note": "Hostname resolves to GitHub Pages addresses. DNS record kind was not independently queried."
+  },
+  "deployment": {
+    "id": 7815753721,
+    "environment": "github-pages",
+    "state": "success",
+    "revision": "c1c737b71d7d477119882fc1b08873b7e6666f50",
+    "workflowUrl": "https://github.com/egohygiene/ethics/actions/runs/43805838083",
+    "qualityWorkflowUrl": "https://github.com/egohygiene/ethics/actions/runs/43805838133"
+  },
+  "publicHashRecheckedAt": "2026-11-16T04:56:47.026185+00:00"
+}
