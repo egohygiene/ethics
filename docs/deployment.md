@@ -6,6 +6,8 @@ The implementation branch is reviewable; it is not a public deployment. Do not m
 
 Initial environment observations (2026-11-15, America/New_York): repository metadata reports `has_pages: false`; `GET /repos/egohygiene/ethics/pages` returns 404; `ethics.egohygiene.io` does not resolve; HTTPS could not be established. Civics and Akashic sibling domains return HTTP 200. The root `egohygiene.io` returned 404, so the footer's Ego Hygiene link uses the public GitHub organization.
 
+The available credential also attempted to enable workflow-based Pages with `POST /repos/egohygiene/ethics/pages` after the implementation PR was opened. GitHub rejected it with **HTTP 403, “Resource not accessible by integration.”** No Pages setting changed and no code was deployed. A maintainer with Pages administration access must perform the setup below.
+
 ## Maintainer steps
 
 1. Review and approve the implementation PR. Check the committed screenshots, source excerpts and exact tables, evidence limitations, and CI results. Independent human evidence review is still pending; if performed, record reviewer, scope, and actual time rather than replacing agent checks with an implied approval.
