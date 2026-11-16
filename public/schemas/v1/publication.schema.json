@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethics.egohygiene.io/schemas/v1/publication.schema.json",
+  "title": "Ethics v1 publication",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "title",
+    "doi",
+    "url",
+    "sourceId",
+    "publicationDate",
+    "publicationType",
+    "venue",
+    "topics",
+    "retrievedAt",
+    "peerReview",
+    "review"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "kind": {
+      "const": "publication"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "doi": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sourceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publicationDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "publicationType": {
+      "enum": [
+        "journal-article",
+        "proceedings-article",
+        "posted-content",
+        "report",
+        "book-chapter",
+        "other"
+      ]
+    },
+    "venue": {
+      "type": "string"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "retrievedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "peerReview": {
+      "const": "unverified"
+    },
+    "review": {
+      "$ref": "common.schema.json#/$defs/review"
+    }
+  },
+  "additionalProperties": false
+}

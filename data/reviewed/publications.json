@@ -1,0 +1,301 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-11e496317d3b43af",
+    "kind": "publication",
+    "title": "Red teaming generative artificial intelligence in nursing education: A risk-based audit",
+    "doi": "10.1016/j.jnr.2026.09.002",
+    "url": "https://doi.org/10.1016/j.jnr.2026.09.002",
+    "sourceId": "crossref",
+    "publicationDate": "2026-10-01",
+    "publicationType": "journal-article",
+    "venue": "Journal of Nursing Regulation",
+    "topics": [
+      "safety"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-d803102e87fcf483",
+    "kind": "publication",
+    "title": "Strategy 22: Assistive technology (including artificial intelligence)",
+    "doi": "10.4324/9781003603474-35",
+    "url": "https://doi.org/10.4324/9781003603474-35",
+    "sourceId": "crossref",
+    "publicationDate": "2026-06-25",
+    "publicationType": "book-chapter",
+    "venue": "What Really Works in Inclusive Education",
+    "topics": [
+      "accessibility"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-1081b661db4ad90f",
+    "kind": "publication",
+    "title": "The public legitimacy of artificial intelligence governance",
+    "doi": "10.4337/9781035338580.00025",
+    "url": "https://doi.org/10.4337/9781035338580.00025",
+    "sourceId": "crossref",
+    "publicationDate": "2026-06-09",
+    "publicationType": "book-chapter",
+    "venue": "Handbook on the Global Governance of Artificial Intelligence",
+    "topics": [
+      "public-interest"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-280a7a2f2724d816",
+    "kind": "publication",
+    "title": "Geospatial Mechanistic Interpretability of Large Language Models",
+    "doi": "10.3233/faia260476",
+    "url": "https://doi.org/10.3233/faia260476",
+    "sourceId": "crossref",
+    "publicationDate": "2026-05-21",
+    "publicationType": "book-chapter",
+    "venue": "Frontiers in Artificial Intelligence and Applications",
+    "topics": [
+      "interpretability"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-ca1f9f8ab8295e42",
+    "kind": "publication",
+    "title": "Human-AI and Social Robots Creative Collaboration",
+    "doi": "10.1007/978-3-032-07753-0_8",
+    "url": "https://doi.org/10.1007/978-3-032-07753-0_8",
+    "sourceId": "crossref",
+    "publicationDate": "2026-01-01",
+    "publicationType": "book-chapter",
+    "venue": "Collaborations in Creativity",
+    "topics": [
+      "creative-collaboration"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-8a3a2149d434a490",
+    "kind": "publication",
+    "title": "Cracking the Circuits: Mechanistic Interpretability in Large Language Models",
+    "doi": "10.1109/inmic65900.2025.11348249",
+    "url": "https://doi.org/10.1109/inmic65900.2025.11348249",
+    "sourceId": "crossref",
+    "publicationDate": "2025-12-23",
+    "publicationType": "proceedings-article",
+    "venue": "2025 27th International Multitopic Conference (INMIC)",
+    "topics": [
+      "interpretability"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-24dded8632df3152",
+    "kind": "publication",
+    "title": "Smart Meta-Controller: Energy Efficient Dynamic Routing for Large Language Model Inference Systems",
+    "doi": "10.1109/csitss67709.2025.11295492",
+    "url": "https://doi.org/10.1109/csitss67709.2025.11295492",
+    "sourceId": "crossref",
+    "publicationDate": "2025-11-20",
+    "publicationType": "proceedings-article",
+    "venue": "2025 9th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)",
+    "topics": [
+      "efficiency"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-c23ad93edc4e1490",
+    "kind": "publication",
+    "title": "Local Differential Privacy for Privacy-preserving Machine Learning",
+    "doi": "10.1561/978-1-63828-477-220251004",
+    "url": "https://doi.org/10.1561/978-1-63828-477-220251004",
+    "sourceId": "crossref",
+    "publicationDate": "2025-07-23",
+    "publicationType": "book-chapter",
+    "venue": "Differential Privacy in Artificial Intelligence",
+    "topics": [
+      "privacy"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-a5e05485d9e638c1",
+    "kind": "publication",
+    "title": "StoreLLM: Energy Efficient Large Language Model Inference with Permanently Pre-stored Attention Matrices",
+    "doi": "10.1145/3679240.3734604",
+    "url": "https://doi.org/10.1145/3679240.3734604",
+    "sourceId": "crossref",
+    "publicationDate": "2025-06-17",
+    "publicationType": "proceedings-article",
+    "venue": "Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems",
+    "topics": [
+      "efficiency"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-93225d33fd154b27",
+    "kind": "publication",
+    "title": "Copyright Evaluation for Content Generated by Artificial Intelligence",
+    "doi": "10.1007/978-3-031-86813-9_12",
+    "url": "https://doi.org/10.1007/978-3-031-86813-9_12",
+    "sourceId": "crossref",
+    "publicationDate": "2025-01-01",
+    "publicationType": "book-chapter",
+    "venue": "Data Science, Machine Intelligence, and Law",
+    "topics": [
+      "provenance"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-238dae06d6c00eda",
+    "kind": "publication",
+    "title": "Mapping Artificial Intelligence Governance for Public Health Applications",
+    "doi": "10.1353/sais.2024.a950957",
+    "url": "https://doi.org/10.1353/sais.2024.a950957",
+    "sourceId": "crossref",
+    "publicationDate": "2024-09-01",
+    "publicationType": "journal-article",
+    "venue": "SAIS Review of International Affairs",
+    "topics": [
+      "public-interest"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-638898cd74a3c828",
+    "kind": "publication",
+    "title": "Machine Learning with Differential Privacy",
+    "doi": "10.1201/9781003185284-9",
+    "url": "https://doi.org/10.1201/9781003185284-9",
+    "sourceId": "crossref",
+    "publicationDate": "2024-08-23",
+    "publicationType": "book-chapter",
+    "venue": "Handbook of Sharing Confidential Data",
+    "topics": [
+      "privacy"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "id": "paper-b6192e255132418a",
+    "kind": "publication",
+    "title": "Organizational and psychological measures for data center energy efficiency: barriers and mitigation strategies",
+    "doi": "10.1007/s12053-022-10078-1",
+    "url": "https://doi.org/10.1007/s12053-022-10078-1",
+    "sourceId": "crossref",
+    "publicationDate": "2023-01-01",
+    "publicationType": "journal-article",
+    "venue": "Energy Efficiency",
+    "topics": [
+      "environment"
+    ],
+    "retrievedAt": "2026-11-16T02:22:56.069Z",
+    "peerReview": "unverified",
+    "review": {
+      "status": "metadata_checked",
+      "checkedAt": "2026-11-16T02:22:56.069Z",
+      "humanReviewedAt": null,
+      "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+    }
+  }
+]

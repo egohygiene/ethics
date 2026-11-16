@@ -1,0 +1,2299 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasets": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "dataset-global",
+      "kind": "dataset",
+      "title": "IEA global electricity endpoints",
+      "sourceIds": [
+        "iea"
+      ],
+      "metricId": "metric-global-electricity",
+      "observationIds": [
+        "obs-global-2024",
+        "obs-global-2030"
+      ],
+      "methodology": "Manually transcribed factual endpoints; implementation agent compared values and scope with the primary source. No interpolation, API estimate of AI share, or inferred missing values.",
+      "limitations": [
+        "Not AI-only. Operational electricity, not all life-cycle impacts. Rounded estimates and a conditional Base Case."
+      ],
+      "freshness": {
+        "sourceDataPeriod": "2024 estimate; 2030 projection",
+        "sourcePublishedAt": "2025-04-10",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "dataset-us",
+      "kind": "dataset",
+      "title": "Berkeley Lab U.S. electricity via DOE",
+      "sourceIds": [
+        "doe"
+      ],
+      "metricId": "metric-us-electricity",
+      "observationIds": [
+        "obs-us-2014",
+        "obs-us-2023",
+        "obs-us-2028"
+      ],
+      "methodology": "Manually transcribed factual endpoints; implementation agent compared values and scope with the primary source. No interpolation, API estimate of AI share, or inferred missing values.",
+      "limitations": [
+        "DOE official summary of Berkeley Lab estimates; not an AI-only measurement. The 2028 range is a projection range, not a statistical confidence interval."
+      ],
+      "freshness": {
+        "sourceDataPeriod": "2014 and 2023 estimates; 2028 projection",
+        "sourcePublishedAt": "2024-12-20",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "dataset-price",
+      "kind": "dataset",
+      "title": "AI Index benchmark-equivalent inference price",
+      "sourceIds": [
+        "ai-index"
+      ],
+      "metricId": "metric-inference-price",
+      "observationIds": [
+        "obs-price-2022-11",
+        "obs-price-2024-10"
+      ],
+      "methodology": "Manually transcribed factual endpoints; implementation agent compared values and scope with the primary source. No interpolation, API estimate of AI share, or inferred missing values.",
+      "limitations": [
+        "API price is not energy, emissions, creative quality, or a measure of every model. Different models at benchmark-equivalent performance."
+      ],
+      "freshness": {
+        "sourceDataPeriod": "November 2022 and October 2024",
+        "sourcePublishedAt": "2025-04-07",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "id": "metric-global-electricity",
+      "title": "Global data-center electricity",
+      "unit": "TWh / year",
+      "geography": "Global",
+      "denominator": "All data-center electricity use in the stated year",
+      "scope": "All data centers, including non-AI workloads",
+      "coverage": "all_data_centers",
+      "limitations": [
+        "Not AI-only. Operational electricity, not all life-cycle impacts. Rounded estimates and a conditional Base Case."
+      ],
+      "schemaVersion": "1.0.0",
+      "kind": "metric"
+    },
+    {
+      "id": "metric-us-electricity",
+      "title": "U.S. data-center electricity",
+      "unit": "TWh / year",
+      "geography": "United States",
+      "denominator": "All U.S. data-center electricity use in the stated year",
+      "scope": "All U.S. data centers, including non-AI workloads",
+      "coverage": "all_data_centers",
+      "limitations": [
+        "DOE official summary of Berkeley Lab estimates; not an AI-only measurement. The 2028 range is a projection range, not a statistical confidence interval."
+      ],
+      "schemaVersion": "1.0.0",
+      "kind": "metric"
+    },
+    {
+      "id": "metric-inference-price",
+      "title": "Inference price at a fixed benchmark threshold",
+      "unit": "USD / million tokens",
+      "geography": "API market (provider-dependent)",
+      "denominator": "One million tokens; 3:1 weighted input/output price",
+      "scope": "AI models meeting GPT-3.5-level MMLU performance (64.8), selected endpoints",
+      "coverage": "ai_inference",
+      "limitations": [
+        "API price is not energy, emissions, creative quality, or a measure of every model. Different models at benchmark-equivalent performance."
+      ],
+      "schemaVersion": "1.0.0",
+      "kind": "metric"
+    }
+  ],
+  "observations": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-global-2024",
+      "kind": "observation",
+      "datasetId": "dataset-global",
+      "metricId": "metric-global-electricity",
+      "label": "2024",
+      "period": "2024",
+      "classification": "documented_estimate",
+      "amount": {
+        "status": "known",
+        "value": 415,
+        "evidenceRefs": [
+          "evidence-iea"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-iea"
+      ],
+      "sourceIds": [
+        "iea"
+      ],
+      "methodology": "Identity transcription of IEA 2025 report endpoints. 2030 is Base Case, not a measured outcome.",
+      "uncertainty": "Rounded point estimate; no statistical confidence interval supplied here. Future uptake, efficiency, and infrastructure constraints can alter the projection.",
+      "freshness": {
+        "sourceDataPeriod": "2024",
+        "sourcePublishedAt": "2025-04-10",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-global-2030",
+      "kind": "observation",
+      "datasetId": "dataset-global",
+      "metricId": "metric-global-electricity",
+      "label": "2030",
+      "period": "2030",
+      "classification": "projection",
+      "amount": {
+        "status": "known",
+        "value": 945,
+        "evidenceRefs": [
+          "evidence-iea"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-iea"
+      ],
+      "sourceIds": [
+        "iea"
+      ],
+      "methodology": "Identity transcription of IEA 2025 report endpoints. 2030 is Base Case, not a measured outcome.",
+      "uncertainty": "Rounded point estimate; no statistical confidence interval supplied here. Future uptake, efficiency, and infrastructure constraints can alter the projection.",
+      "freshness": {
+        "sourceDataPeriod": "2030",
+        "sourcePublishedAt": "2025-04-10",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-us-2014",
+      "kind": "observation",
+      "datasetId": "dataset-us",
+      "metricId": "metric-us-electricity",
+      "label": "2014",
+      "period": "2014",
+      "classification": "documented_estimate",
+      "amount": {
+        "status": "known",
+        "value": 58,
+        "evidenceRefs": [
+          "evidence-doe"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-doe"
+      ],
+      "sourceIds": [
+        "doe"
+      ],
+      "methodology": "Identity transcription from DOE official summary of Berkeley Lab 2024 report. Range endpoints retained; no invented midpoint.",
+      "uncertainty": "2028 source scenario range, not a confidence interval. Historical estimates have model/coverage limitations.",
+      "freshness": {
+        "sourceDataPeriod": "2014",
+        "sourcePublishedAt": "2024-12-20",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-us-2023",
+      "kind": "observation",
+      "datasetId": "dataset-us",
+      "metricId": "metric-us-electricity",
+      "label": "2023",
+      "period": "2023",
+      "classification": "documented_estimate",
+      "amount": {
+        "status": "known",
+        "value": 176,
+        "evidenceRefs": [
+          "evidence-doe"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-doe"
+      ],
+      "sourceIds": [
+        "doe"
+      ],
+      "methodology": "Identity transcription from DOE official summary of Berkeley Lab 2024 report. Range endpoints retained; no invented midpoint.",
+      "uncertainty": "2028 source scenario range, not a confidence interval. Historical estimates have model/coverage limitations.",
+      "freshness": {
+        "sourceDataPeriod": "2023",
+        "sourcePublishedAt": "2024-12-20",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-us-2028",
+      "kind": "observation",
+      "datasetId": "dataset-us",
+      "metricId": "metric-us-electricity",
+      "label": "2028",
+      "period": "2028",
+      "classification": "projection",
+      "amount": {
+        "status": "known",
+        "value": [
+          325,
+          580
+        ],
+        "evidenceRefs": [
+          "evidence-doe"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-doe"
+      ],
+      "sourceIds": [
+        "doe"
+      ],
+      "methodology": "Identity transcription from DOE official summary of Berkeley Lab 2024 report. Range endpoints retained; no invented midpoint.",
+      "uncertainty": "2028 source scenario range, not a confidence interval. Historical estimates have model/coverage limitations.",
+      "freshness": {
+        "sourceDataPeriod": "2028",
+        "sourcePublishedAt": "2024-12-20",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-price-2022-11",
+      "kind": "observation",
+      "datasetId": "dataset-price",
+      "metricId": "metric-inference-price",
+      "label": "Nov 2022",
+      "period": "2022-11",
+      "classification": "documented_estimate",
+      "amount": {
+        "status": "known",
+        "value": 20,
+        "evidenceRefs": [
+          "evidence-price"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-price"
+      ],
+      "sourceIds": [
+        "ai-index"
+      ],
+      "methodology": "Identity transcription of Stanford AI Index 2025, section 1.3, figure 1.3.22; fixed MMLU 64.8 threshold, 3:1 weighted input/output pricing.",
+      "uncertainty": "Selected API price endpoints; no confidence interval provided. Benchmark equivalence is not equivalence on every real-world task.",
+      "freshness": {
+        "sourceDataPeriod": "2022-11",
+        "sourcePublishedAt": "2025-04-07",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "obs-price-2024-10",
+      "kind": "observation",
+      "datasetId": "dataset-price",
+      "metricId": "metric-inference-price",
+      "label": "Oct 2024",
+      "period": "2024-10",
+      "classification": "documented_estimate",
+      "amount": {
+        "status": "known",
+        "value": 0.07,
+        "evidenceRefs": [
+          "evidence-price"
+        ],
+        "note": "Rounded source figure; no interpolation."
+      },
+      "evidenceRefs": [
+        "evidence-price"
+      ],
+      "sourceIds": [
+        "ai-index"
+      ],
+      "methodology": "Identity transcription of Stanford AI Index 2025, section 1.3, figure 1.3.22; fixed MMLU 64.8 threshold, 3:1 weighted input/output pricing.",
+      "uncertainty": "Selected API price endpoints; no confidence interval provided. Benchmark equivalence is not equivalence on every real-world task.",
+      "freshness": {
+        "sourceDataPeriod": "2024-10",
+        "sourcePublishedAt": "2025-04-07",
+        "lastCheckedAt": "2026-11-16T02:30:46Z",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "evidence-iea",
+      "kind": "evidence",
+      "sourceId": "iea",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "locator": "Energy demand from AI → Data centre electricity consumption; 2024 estimate and 2030 Base Case",
+      "excerpt": "Electricity consumption from data centres is estimated to amount to around 415 terawatt hours (TWh), or about 1.5% of global electricity consumption in 2024. Global electricity consumption for data centres is projected to double to reach around 945 TWh by 2030 in the Base Case.",
+      "rawRef": "data/raw/evidence-iea.json",
+      "publishedAt": "2025-04-10",
+      "retrievedAt": "2026-11-16T02:30:46Z",
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "evidence-doe",
+      "kind": "evidence",
+      "sourceId": "doe",
+      "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "locator": "December 20, 2024 release → paragraph beginning “The report indicates”",
+      "excerpt": "The report indicates that total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 and estimates an increase between 325 to 580 TWh by 2028.",
+      "rawRef": "data/raw/evidence-doe.json",
+      "publishedAt": "2024-12-20",
+      "retrievedAt": "2026-11-16T02:30:46Z",
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "evidence-price",
+      "kind": "evidence",
+      "sourceId": "ai-index",
+      "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf#page=65",
+      "locator": "Chapter 1, section 1.3 Inference Cost, printed page 64 (PDF page 65), figure 1.3.22. 3:1 weighted input/output price; MMLU 64.8 threshold.",
+      "excerpt": "Inference cost for an AI model scoring the equivalent of GPT-3.5 (64.8) on MMLU dropped from $20 per million tokens in November 2022 to just $0.07 per million tokens by October 2024. The reported price is a 3:1 weighted average of input and output token prices.",
+      "rawRef": "data/raw/evidence-price.json",
+      "publishedAt": "2025-04-07",
+      "retrievedAt": "2026-11-16T02:30:46Z",
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    }
+  ],
+  "claims": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "claim-global",
+      "kind": "claim",
+      "statement": "IEA estimates 415 TWh of global data-center electricity in 2024 and projects 945 TWh in its 2030 Base Case.",
+      "classification": "documented_estimate",
+      "evidenceRefs": [
+        "evidence-iea"
+      ],
+      "sourceIds": [
+        "iea"
+      ],
+      "limitations": [
+        "All data centers; the 2030 endpoint is a projection."
+      ],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "claim-us",
+      "kind": "claim",
+      "statement": "Berkeley Lab’s 2028 U.S. projection spans 325–580 TWh, as reported by DOE.",
+      "classification": "projection",
+      "evidenceRefs": [
+        "evidence-doe"
+      ],
+      "sourceIds": [
+        "doe"
+      ],
+      "limitations": [
+        "Scenario range, not a confidence interval."
+      ],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "claim-price",
+      "kind": "claim",
+      "statement": "Selected inference prices fell from $20 to $0.07 per million tokens at the MMLU 64.8 threshold.",
+      "classification": "documented_estimate",
+      "evidenceRefs": [
+        "evidence-price"
+      ],
+      "sourceIds": [
+        "ai-index"
+      ],
+      "limitations": [
+        "Selected endpoints, 3:1 input/output weighting. Price is not energy."
+      ],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    }
+  ],
+  "visualizations": [
+    {
+      "id": "chart-global",
+      "title": "The electricity footprint is growing",
+      "datasetId": "dataset-global",
+      "dimension": "environment",
+      "question": "How much electricity do data centers use globally?",
+      "takeaway": "IEA’s 2030 Base Case is more than twice its 2024 estimate. Both figures include non-AI workloads.",
+      "transformId": "identity-bars",
+      "scale": "linear",
+      "axisMax": 1000,
+      "limitations": [
+        "All data centers · estimates and projection · no interpolation"
+      ],
+      "claimIds": [
+        "claim-global"
+      ],
+      "schemaVersion": "1.0.0",
+      "kind": "visualization",
+      "transformVersion": "1.0.0"
+    },
+    {
+      "id": "chart-us",
+      "title": "A future with a wide range",
+      "datasetId": "dataset-us",
+      "dimension": "environment",
+      "question": "What range does Berkeley Lab project for U.S. electricity demand?",
+      "takeaway": "The 2028 range shows how uncertain the growth path remains. It is not a confidence interval.",
+      "transformId": "range-bars",
+      "scale": "linear",
+      "axisMax": 600,
+      "limitations": [
+        "United States · all data centers · source scenario range"
+      ],
+      "claimIds": [
+        "claim-us"
+      ],
+      "schemaVersion": "1.0.0",
+      "kind": "visualization",
+      "transformVersion": "1.0.0"
+    },
+    {
+      "id": "chart-price",
+      "title": "Capability is becoming less expensive",
+      "datasetId": "dataset-price",
+      "dimension": "technology",
+      "question": "How has price changed at a fixed benchmark threshold?",
+      "takeaway": "Selected benchmark-equivalent API prices fell sharply. A lower price does not establish lower energy use.",
+      "transformId": "identity-bars",
+      "scale": "linear",
+      "axisMax": 20,
+      "limitations": [
+        "API price, not energy · selected endpoints · MMLU 64.8 threshold"
+      ],
+      "claimIds": [
+        "claim-price"
+      ],
+      "schemaVersion": "1.0.0",
+      "kind": "visualization",
+      "transformVersion": "1.0.0"
+    }
+  ],
+  "organizations": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-ecologits",
+      "kind": "organization",
+      "title": "EcoLogits",
+      "url": "https://ecologits.ai/latest/",
+      "description": "Estimates supported API inference energy and impacts; not direct metering, not universal model/video coverage.",
+      "topics": [
+        "efficiency",
+        "environment"
+      ],
+      "sourceIds": [
+        "ecologits"
+      ],
+      "accessNotes": "Project documentation and code have separate terms; inspect linked repository license before reuse.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-codecarbon",
+      "kind": "organization",
+      "title": "CodeCarbon",
+      "url": "https://docs.codecarbon.io/latest/",
+      "description": "Estimates energy and emissions on accessible hardware. Not direct closed-provider video workflow measurement.",
+      "topics": [
+        "efficiency",
+        "environment"
+      ],
+      "sourceIds": [
+        "codecarbon"
+      ],
+      "accessNotes": "MIT-licensed software; documentation and input data may have separate terms.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-ai-energy-score",
+      "kind": "organization",
+      "title": "AI Energy Score",
+      "url": "https://huggingface.github.io/AIEnergyScore/",
+      "description": "Task- and hardware-dependent benchmark; no universal per-prompt comparison. No adapter in v0.1.",
+      "topics": [
+        "efficiency"
+      ],
+      "sourceIds": [
+        "ai-energy-score"
+      ],
+      "accessNotes": "Benchmark code/data have specific licenses; inspect each release. No dataset mirrored.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-mit-risk",
+      "kind": "organization",
+      "title": "MIT AI Risk Repository",
+      "url": "https://airisk.mit.edu/",
+      "description": "Living risk taxonomy; catalog entries are not incidence rates or causal population estimates.",
+      "topics": [
+        "safety",
+        "public-interest"
+      ],
+      "sourceIds": [
+        "mit-risk"
+      ],
+      "accessNotes": "Repository-specific licensing and taxonomy limitations apply. Link only.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-nist",
+      "kind": "organization",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "description": "Voluntary risk-management framework, not certification of a company or a specific system.",
+      "topics": [
+        "safety",
+        "public-interest"
+      ],
+      "sourceIds": [
+        "nist"
+      ],
+      "accessNotes": "U.S. government framework; preserve attribution and third-party exceptions.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-copyright",
+      "kind": "organization",
+      "title": "Copyright and Artificial Intelligence",
+      "url": "https://www.copyright.gov/ai/",
+      "description": "Jurisdiction-specific reports, including authorship and training issues. Reference only; no legal advice or automatic resolution of disputes.",
+      "topics": [
+        "provenance",
+        "creative-collaboration"
+      ],
+      "sourceIds": [
+        "copyright"
+      ],
+      "accessNotes": "Official U.S. government reports and guidance; linked submissions may have third-party copyright.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-ilo",
+      "kind": "organization",
+      "title": "Generative AI and Jobs: refined occupational exposure index",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "description": "Task exposure research; exposure does not establish actual displacement or individual outcomes.",
+      "topics": [
+        "public-interest"
+      ],
+      "sourceIds": [
+        "ilo"
+      ],
+      "accessNotes": "ILO publication-specific license and terms; link only.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-osi",
+      "kind": "organization",
+      "title": "Open Source AI Definition",
+      "url": "https://opensource.org/ai",
+      "description": "Distinguishes access to weights from the broader requirements of open source AI.",
+      "topics": [
+        "public-interest",
+        "privacy"
+      ],
+      "sourceIds": [
+        "osi"
+      ],
+      "accessNotes": "Definition and site-specific licenses; inspect linked terms.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-c2pa",
+      "kind": "organization",
+      "title": "Coalition for Content Provenance and Authenticity",
+      "url": "https://c2pa.org/",
+      "description": "Technical provenance standard. Content credentials do not prove that a depicted event is true.",
+      "topics": [
+        "provenance"
+      ],
+      "sourceIds": [
+        "c2pa"
+      ],
+      "accessNotes": "Specification and implementation licenses differ; link only.",
+      "akashicUrl": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-fda",
+      "kind": "organization",
+      "title": "FDA AI-enabled medical devices",
+      "url": "https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices",
+      "description": "Official device list is not exhaustive and authorization does not establish net population health benefit or a universal clinical outcome.",
+      "topics": [
+        "safety",
+        "accessibility"
+      ],
+      "sourceIds": [
+        "fda"
+      ],
+      "accessNotes": "U.S. government list with scope notes; no device database mirrored.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-akashic-ai",
+      "kind": "organization",
+      "title": "Akashic · Artificial Intelligence",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "description": "Sibling curated list, linked rather than copied or used as an empirical dataset.",
+      "topics": [
+        "public-interest",
+        "safety"
+      ],
+      "sourceIds": [
+        "akashic-ai"
+      ],
+      "accessNotes": "Curated link collection; destination resources have their own terms.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-akashic-research",
+      "kind": "organization",
+      "title": "Akashic · Research",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "description": "Reproducibility, scholarly discovery, and open research resources.",
+      "topics": [
+        "public-interest"
+      ],
+      "sourceIds": [
+        "akashic-research"
+      ],
+      "accessNotes": "Curated link collection; destination resources have their own terms.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-akashic-creative",
+      "kind": "organization",
+      "title": "Akashic · Creative Resources",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "description": "Creative tools, provenance, and traditional production resources. Inclusion is not blanket endorsement.",
+      "topics": [
+        "creative-collaboration",
+        "provenance"
+      ],
+      "sourceIds": [
+        "akashic-creative"
+      ],
+      "accessNotes": "Curated link collection; each asset/tool has separate terms.",
+      "akashicUrl": null,
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-promptfoo",
+      "kind": "organization",
+      "title": "Promptfoo",
+      "url": "https://www.promptfoo.dev/",
+      "description": "Evaluation and red-teaming toolkit curated in Akashic; test coverage is not a safety guarantee.",
+      "topics": [
+        "safety"
+      ],
+      "sourceIds": [
+        "promptfoo"
+      ],
+      "accessNotes": "Software and services have separate license/access terms.",
+      "akashicUrl": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "org-osf",
+      "kind": "organization",
+      "title": "Open Science Framework",
+      "url": "https://osf.io/",
+      "description": "Preregistration and reproducible research planning, curated in Akashic’s research collection.",
+      "topics": [
+        "public-interest"
+      ],
+      "sourceIds": [
+        "osf"
+      ],
+      "accessNotes": "Project content and platform terms differ; hosted features may require accounts.",
+      "akashicUrl": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "iea",
+      "kind": "source",
+      "title": "IEA · Energy and AI",
+      "publisher": "International Energy Agency",
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "accessMode": "manual_report",
+      "automated": false,
+      "accessNotes": "Official report; chart endpoints are manually transcribed and source-compared. No report scraping or runtime API.",
+      "licenseNotes": "CC BY 4.0 for this report, subject to IEA terms and third-party exclusions. Attribute IEA (2025), Energy and AI.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:32.787367+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": "2025-04-10",
+        "lastCheckedAt": "2026-11-16T02:20:32.787367+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "berkeley-lab",
+      "kind": "source",
+      "title": "Berkeley Lab publications",
+      "publisher": "Lawrence Berkeley National Laboratory",
+      "url": "https://eta-publications.lbl.gov/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Official publication catalog. Historical report URL redirected to a zero-body response; quantitative values use DOE’s accessible official summary instead.",
+      "licenseNotes": "Item-specific rights; no full reports redistributed.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:32.788264+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:32.788264+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "doe",
+      "kind": "source",
+      "title": "DOE · U.S. data-center energy report summary",
+      "publisher": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "accessMode": "manual_report",
+      "automated": false,
+      "accessNotes": "Accessible official summary of Berkeley Lab’s 2024 report. No automated ingestion of the report.",
+      "licenseNotes": "Official U.S. government factual summary; check third-party exceptions. Only short attributed evidence excerpts retained.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.500005+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": "2024-12-20",
+        "lastCheckedAt": "2026-11-16T02:20:34.500005+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "eia",
+      "kind": "source",
+      "title": "EIA Open Data",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/opendata/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Documented API and downloads; API access can require a key. Not integrated in v0.1; no AI-only measure assumed.",
+      "licenseNotes": "U.S. government data; review dataset-specific attribution and API conditions.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:32.788752+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:32.788752+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "epa-egrid",
+      "kind": "source",
+      "title": "EPA eGRID",
+      "publisher": "U.S. Environmental Protection Agency",
+      "url": "https://www.epa.gov/egrid",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Versioned grid emissions downloads; not an AI energy dataset. No adapter in v0.1.",
+      "licenseNotes": "U.S. government data with dataset-specific notes. No workbook redistributed.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:32.789158+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:32.789158+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "usgs-water",
+      "kind": "source",
+      "title": "USGS Water Use",
+      "publisher": "U.S. Geological Survey",
+      "url": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Water-use reference and datasets. Regional and temporal aggregation limits attribution to individual data centers; not integrated.",
+      "licenseNotes": "U.S. government data; check each dataset’s terms and method.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:32.789513+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:32.789513+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "ecologits",
+      "kind": "source",
+      "title": "EcoLogits",
+      "publisher": "GenAI Impact",
+      "url": "https://ecologits.ai/latest/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Estimates supported API inference energy and impacts; not direct metering, not universal model/video coverage.",
+      "licenseNotes": "Project documentation and code have separate terms; inspect linked repository license before reuse.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency",
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:32.790331+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:32.790331+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "codecarbon",
+      "kind": "source",
+      "title": "CodeCarbon",
+      "publisher": "CodeCarbon contributors",
+      "url": "https://docs.codecarbon.io/latest/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Estimates energy and emissions on accessible hardware. Not direct closed-provider video workflow measurement.",
+      "licenseNotes": "MIT-licensed software; documentation and input data may have separate terms.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency",
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.040501+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.040501+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "ai-energy-score",
+      "kind": "source",
+      "title": "AI Energy Score",
+      "publisher": "Hugging Face and collaborators",
+      "url": "https://huggingface.github.io/AIEnergyScore/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Task- and hardware-dependent benchmark; no universal per-prompt comparison. No adapter in v0.1.",
+      "licenseNotes": "Benchmark code/data have specific licenses; inspect each release. No dataset mirrored.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.085373+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.085373+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "mlcommons",
+      "kind": "source",
+      "title": "MLCommons",
+      "publisher": "MLCommons",
+      "url": "https://mlcommons.org/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Benchmark documentation and submissions; hardware/method comparability must be checked.",
+      "licenseNotes": "Benchmark-specific terms and rules apply. Link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency",
+        "safety"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.113171+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.113171+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "green-software",
+      "kind": "source",
+      "title": "Green Software Foundation",
+      "publisher": "Green Software Foundation",
+      "url": "https://greensoftware.foundation/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Software carbon accounting and engineering resources; no live measurements integrated.",
+      "licenseNotes": "Resource-specific licenses; link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency",
+        "environment"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.155736+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.155736+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "epoch",
+      "kind": "source",
+      "title": "Epoch AI data",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Research datasets with individual download/access rules. Stanford’s selected price evidence is not a direct Epoch API import.",
+      "licenseNotes": "Dataset-specific terms; do not assume every dataset is freely redistributable.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency",
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.253869+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.253869+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "ai-index",
+      "kind": "source",
+      "title": "Stanford AI Index 2025",
+      "publisher": "Stanford Institute for Human-Centered AI",
+      "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "accessMode": "manual_report",
+      "automated": false,
+      "accessNotes": "2025 report PDF, chapter 1, printed page 64 (PDF page 65), figure 1.3.22. Price endpoints transcribed; no runtime feed.",
+      "licenseNotes": "Report reuse and underlying third-party data have separate terms. Only two attributed factual endpoints and a short excerpt retained.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "efficiency",
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.281344+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": "2025-04-07",
+        "lastCheckedAt": "2026-11-16T02:20:33.281344+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "openalex",
+      "kind": "source",
+      "title": "OpenAlex",
+      "publisher": "OurResearch",
+      "url": "https://openalex.org/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Discovery API tested once and returned HTTP 429 in this environment. No adapter enabled; Crossref used instead. Landing-page access does not establish API availability.",
+      "licenseNotes": "OpenAlex metadata is CC0; API budgets/authentication policies apply.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.412426+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.412426+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "mit-risk",
+      "kind": "source",
+      "title": "MIT AI Risk Repository",
+      "publisher": "MIT FutureTech and collaborators",
+      "url": "https://airisk.mit.edu/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Living risk taxonomy; catalog entries are not incidence rates or causal population estimates.",
+      "licenseNotes": "Repository-specific licensing and taxonomy limitations apply. Link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "safety",
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.470780+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.470780+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "fmti",
+      "kind": "source",
+      "title": "Foundation Model Transparency Index",
+      "publisher": "Stanford CRFM",
+      "url": "https://crfm.stanford.edu/fmti/December-2025/index.html",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "December 2025 official report. Transparency indicators are not comprehensive measures of ethical conduct; methods vary by edition.",
+      "licenseNotes": "Report and underlying data terms vary; link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.552033+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.552033+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "oecd",
+      "kind": "source",
+      "title": "OECD AI Policy Observatory",
+      "publisher": "OECD",
+      "url": "https://oecd.ai/en/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Policy and analytical resources; do not presume a general-purpose unrestricted API.",
+      "licenseNotes": "OECD dataset-specific terms; no dataset mirrored.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.571402+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.571402+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "aiid",
+      "kind": "source",
+      "title": "AI Incident Database",
+      "publisher": "Responsible AI Collaborative",
+      "url": "https://incidentdatabase.ai/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Documented incident discovery; reporting/selection bias prevents direct incidence-rate inference.",
+      "licenseNotes": "Incident reports and database exports have specific terms. No reports copied.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "safety"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.701495+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.701495+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "avid",
+      "kind": "source",
+      "title": "AVID",
+      "publisher": "AI Vulnerability Database",
+      "url": "https://avidml.org/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "AI vulnerability information; no API or complete coverage assumed.",
+      "licenseNotes": "Database and report-specific terms; link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "safety"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:33.798314+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:33.798314+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "nist",
+      "kind": "source",
+      "title": "NIST AI Risk Management Framework",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Voluntary risk-management framework, not certification of a company or a specific system.",
+      "licenseNotes": "U.S. government framework; preserve attribution and third-party exceptions.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "safety",
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.004058+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.004058+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "copyright",
+      "kind": "source",
+      "title": "Copyright and Artificial Intelligence",
+      "publisher": "U.S. Copyright Office",
+      "url": "https://www.copyright.gov/ai/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Jurisdiction-specific reports, including authorship and training issues. Reference only; no legal advice or automatic resolution of disputes.",
+      "licenseNotes": "Official U.S. government reports and guidance; linked submissions may have third-party copyright.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "provenance",
+        "creative-collaboration"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.022678+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.022678+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "ilo",
+      "kind": "source",
+      "title": "Generative AI and Jobs: refined occupational exposure index",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Task exposure research; exposure does not establish actual displacement or individual outcomes.",
+      "licenseNotes": "ILO publication-specific license and terms; link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.120396+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": "2025-05-20",
+        "lastCheckedAt": "2026-11-16T02:20:34.120396+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "osi",
+      "kind": "source",
+      "title": "Open Source AI Definition",
+      "publisher": "Open Source Initiative",
+      "url": "https://opensource.org/ai",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Distinguishes access to weights from the broader requirements of open source AI.",
+      "licenseNotes": "Definition and site-specific licenses; inspect linked terms.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest",
+        "privacy"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.122361+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.122361+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "c2pa",
+      "kind": "source",
+      "title": "Coalition for Content Provenance and Authenticity",
+      "publisher": "C2PA",
+      "url": "https://c2pa.org/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Technical provenance standard. Content credentials do not prove that a depicted event is true.",
+      "licenseNotes": "Specification and implementation licenses differ; link only.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "provenance"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.125426+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.125426+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "fda",
+      "kind": "source",
+      "title": "FDA AI-enabled medical devices",
+      "publisher": "U.S. Food and Drug Administration",
+      "url": "https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Official device list is not exhaustive and authorization does not establish net population health benefit or a universal clinical outcome.",
+      "licenseNotes": "U.S. government list with scope notes; no device database mirrored.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "safety",
+        "accessibility"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.222814+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.222814+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "crossref",
+      "kind": "source",
+      "title": "Crossref REST API",
+      "publisher": "Crossref",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "accessMode": "automated_dataset",
+      "automated": true,
+      "accessNotes": "No-authentication public API. Nine sequential topic requests, three metadata records each; bounded retries, DOI deduplication, no full-text scraping.",
+      "licenseNotes": "Bibliographic facts are available for reuse through the public REST API; abstracts and full text have separate rights and are not retained.",
+      "updatePolicy": "Monthly bounded metadata discovery; candidate PR only, never automatic conclusion promotion.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.498193+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.498193+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "akashic-ai",
+      "kind": "source",
+      "title": "Akashic · Artificial Intelligence",
+      "publisher": "Ego Hygiene",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Sibling curated list, linked rather than copied or used as an empirical dataset.",
+      "licenseNotes": "Curated link collection; destination resources have their own terms.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest",
+        "safety"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.624541+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.624541+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "akashic-research",
+      "kind": "source",
+      "title": "Akashic · Research",
+      "publisher": "Ego Hygiene",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Reproducibility, scholarly discovery, and open research resources.",
+      "licenseNotes": "Curated link collection; destination resources have their own terms.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.664675+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.664675+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "akashic-creative",
+      "kind": "source",
+      "title": "Akashic · Creative Resources",
+      "publisher": "Ego Hygiene",
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Creative tools, provenance, and traditional production resources. Inclusion is not blanket endorsement.",
+      "licenseNotes": "Curated link collection; each asset/tool has separate terms.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "creative-collaboration",
+        "provenance"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.775896+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.775896+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "promptfoo",
+      "kind": "source",
+      "title": "Promptfoo",
+      "publisher": "Promptfoo contributors",
+      "url": "https://www.promptfoo.dev/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Evaluation and red-teaming toolkit curated in Akashic; test coverage is not a safety guarantee.",
+      "licenseNotes": "Software and services have separate license/access terms.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "safety"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.783760+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.783760+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "c2pa-tool",
+      "kind": "source",
+      "title": "C2PA Tool",
+      "publisher": "Content Authenticity Initiative",
+      "url": "https://opensource.contentauthenticity.org/docs/sdk-repos/c2patool/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "CLI for inspecting and producing content provenance manifests, linked through official documentation.",
+      "licenseNotes": "Implementation-specific software licenses; inspect repository release.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "provenance"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:34.901246+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:34.901246+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "osf",
+      "kind": "source",
+      "title": "Open Science Framework",
+      "publisher": "Center for Open Science",
+      "url": "https://osf.io/",
+      "accessMode": "reference_only",
+      "automated": false,
+      "accessNotes": "Preregistration and reproducible research planning, curated in Akashic’s research collection.",
+      "licenseNotes": "Project content and platform terms differ; hosted features may require accounts.",
+      "updatePolicy": "Quarterly manual source review; material report updates require explicit source comparison and a reviewed Git change. Link health is checked separately.",
+      "topics": [
+        "public-interest"
+      ],
+      "availability": "accessible",
+      "lastAttemptAt": "2026-11-16T02:20:35.119181+00:00",
+      "freshness": {
+        "sourceDataPeriod": null,
+        "sourcePublishedAt": null,
+        "lastCheckedAt": "2026-11-16T02:20:35.119181+00:00",
+        "lastMaterialChangeAt": "2026-11-16T02:30:46Z",
+        "lastAgentReviewAt": "2026-11-16T02:30:46Z",
+        "lastHumanReviewAt": null
+      },
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:30:46Z",
+        "humanReviewedAt": null,
+        "note": "Primary source and scope checked by the implementation agent; independent human evidence review is pending."
+      }
+    }
+  ],
+  "publications": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-11e496317d3b43af",
+      "kind": "publication",
+      "title": "Red teaming generative artificial intelligence in nursing education: A risk-based audit",
+      "doi": "10.1016/j.jnr.2026.09.002",
+      "url": "https://doi.org/10.1016/j.jnr.2026.09.002",
+      "sourceId": "crossref",
+      "publicationDate": "2026-10-01",
+      "publicationType": "journal-article",
+      "venue": "Journal of Nursing Regulation",
+      "topics": [
+        "safety"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-d803102e87fcf483",
+      "kind": "publication",
+      "title": "Strategy 22: Assistive technology (including artificial intelligence)",
+      "doi": "10.4324/9781003603474-35",
+      "url": "https://doi.org/10.4324/9781003603474-35",
+      "sourceId": "crossref",
+      "publicationDate": "2026-06-25",
+      "publicationType": "book-chapter",
+      "venue": "What Really Works in Inclusive Education",
+      "topics": [
+        "accessibility"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-1081b661db4ad90f",
+      "kind": "publication",
+      "title": "The public legitimacy of artificial intelligence governance",
+      "doi": "10.4337/9781035338580.00025",
+      "url": "https://doi.org/10.4337/9781035338580.00025",
+      "sourceId": "crossref",
+      "publicationDate": "2026-06-09",
+      "publicationType": "book-chapter",
+      "venue": "Handbook on the Global Governance of Artificial Intelligence",
+      "topics": [
+        "public-interest"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-280a7a2f2724d816",
+      "kind": "publication",
+      "title": "Geospatial Mechanistic Interpretability of Large Language Models",
+      "doi": "10.3233/faia260476",
+      "url": "https://doi.org/10.3233/faia260476",
+      "sourceId": "crossref",
+      "publicationDate": "2026-05-21",
+      "publicationType": "book-chapter",
+      "venue": "Frontiers in Artificial Intelligence and Applications",
+      "topics": [
+        "interpretability"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-ca1f9f8ab8295e42",
+      "kind": "publication",
+      "title": "Human-AI and Social Robots Creative Collaboration",
+      "doi": "10.1007/978-3-032-07753-0_8",
+      "url": "https://doi.org/10.1007/978-3-032-07753-0_8",
+      "sourceId": "crossref",
+      "publicationDate": "2026-01-01",
+      "publicationType": "book-chapter",
+      "venue": "Collaborations in Creativity",
+      "topics": [
+        "creative-collaboration"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-8a3a2149d434a490",
+      "kind": "publication",
+      "title": "Cracking the Circuits: Mechanistic Interpretability in Large Language Models",
+      "doi": "10.1109/inmic65900.2025.11348249",
+      "url": "https://doi.org/10.1109/inmic65900.2025.11348249",
+      "sourceId": "crossref",
+      "publicationDate": "2025-12-23",
+      "publicationType": "proceedings-article",
+      "venue": "2025 27th International Multitopic Conference (INMIC)",
+      "topics": [
+        "interpretability"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-24dded8632df3152",
+      "kind": "publication",
+      "title": "Smart Meta-Controller: Energy Efficient Dynamic Routing for Large Language Model Inference Systems",
+      "doi": "10.1109/csitss67709.2025.11295492",
+      "url": "https://doi.org/10.1109/csitss67709.2025.11295492",
+      "sourceId": "crossref",
+      "publicationDate": "2025-11-20",
+      "publicationType": "proceedings-article",
+      "venue": "2025 9th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)",
+      "topics": [
+        "efficiency"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-c23ad93edc4e1490",
+      "kind": "publication",
+      "title": "Local Differential Privacy for Privacy-preserving Machine Learning",
+      "doi": "10.1561/978-1-63828-477-220251004",
+      "url": "https://doi.org/10.1561/978-1-63828-477-220251004",
+      "sourceId": "crossref",
+      "publicationDate": "2025-07-23",
+      "publicationType": "book-chapter",
+      "venue": "Differential Privacy in Artificial Intelligence",
+      "topics": [
+        "privacy"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-a5e05485d9e638c1",
+      "kind": "publication",
+      "title": "StoreLLM: Energy Efficient Large Language Model Inference with Permanently Pre-stored Attention Matrices",
+      "doi": "10.1145/3679240.3734604",
+      "url": "https://doi.org/10.1145/3679240.3734604",
+      "sourceId": "crossref",
+      "publicationDate": "2025-06-17",
+      "publicationType": "proceedings-article",
+      "venue": "Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems",
+      "topics": [
+        "efficiency"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-93225d33fd154b27",
+      "kind": "publication",
+      "title": "Copyright Evaluation for Content Generated by Artificial Intelligence",
+      "doi": "10.1007/978-3-031-86813-9_12",
+      "url": "https://doi.org/10.1007/978-3-031-86813-9_12",
+      "sourceId": "crossref",
+      "publicationDate": "2025-01-01",
+      "publicationType": "book-chapter",
+      "venue": "Data Science, Machine Intelligence, and Law",
+      "topics": [
+        "provenance"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-238dae06d6c00eda",
+      "kind": "publication",
+      "title": "Mapping Artificial Intelligence Governance for Public Health Applications",
+      "doi": "10.1353/sais.2024.a950957",
+      "url": "https://doi.org/10.1353/sais.2024.a950957",
+      "sourceId": "crossref",
+      "publicationDate": "2024-09-01",
+      "publicationType": "journal-article",
+      "venue": "SAIS Review of International Affairs",
+      "topics": [
+        "public-interest"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-638898cd74a3c828",
+      "kind": "publication",
+      "title": "Machine Learning with Differential Privacy",
+      "doi": "10.1201/9781003185284-9",
+      "url": "https://doi.org/10.1201/9781003185284-9",
+      "sourceId": "crossref",
+      "publicationDate": "2024-08-23",
+      "publicationType": "book-chapter",
+      "venue": "Handbook of Sharing Confidential Data",
+      "topics": [
+        "privacy"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-b6192e255132418a",
+      "kind": "publication",
+      "title": "Organizational and psychological measures for data center energy efficiency: barriers and mitigation strategies",
+      "doi": "10.1007/s12053-022-10078-1",
+      "url": "https://doi.org/10.1007/s12053-022-10078-1",
+      "sourceId": "crossref",
+      "publicationDate": "2023-01-01",
+      "publicationType": "journal-article",
+      "venue": "Energy Efficiency",
+      "topics": [
+        "environment"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    }
+  ],
+  "releaseVersion": "0.1.0"
+}

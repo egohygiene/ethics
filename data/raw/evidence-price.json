@@ -1,0 +1,9 @@
+{
+  "sourceId": "ai-index",
+  "originalUrl": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf#page=65",
+  "locator": "Chapter 1, section 1.3 Inference Cost, printed page 64 (PDF page 65), figure 1.3.22. 3:1 weighted input/output price; MMLU 64.8 threshold.",
+  "retrievedAt": "2026-11-16T02:30:46Z",
+  "captureMethod": "Agent-transcribed short excerpt, compared with accessible official HTML or PDF; not a full report mirror. IEA excerpt joins two source passages.",
+  "excerpt": "Inference cost for an AI model scoring the equivalent of GPT-3.5 (64.8) on MMLU dropped from $20 per million tokens in November 2022 to just $0.07 per million tokens by October 2024. The reported price is a 3:1 weighted average of input and output token prices.",
+  "sha256": "940c6be2dc94f6e869d39c89cb25b10ff22fc69c84560c2d1766bd3f209a945c"
+}

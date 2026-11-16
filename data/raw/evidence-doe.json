@@ -1,0 +1,9 @@
+{
+  "sourceId": "doe",
+  "originalUrl": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+  "locator": "December 20, 2024 release → paragraph beginning “The report indicates”",
+  "retrievedAt": "2026-11-16T02:30:46Z",
+  "captureMethod": "Agent-transcribed short excerpt, compared with accessible official HTML or PDF; not a full report mirror. IEA excerpt joins two source passages.",
+  "excerpt": "The report indicates that total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 and estimates an increase between 325 to 580 TWh by 2028.",
+  "sha256": "7d7a4d9e7bda545084cfa174b651d8f850d2ceb9b1825f1d21d89040937f994b"
+}

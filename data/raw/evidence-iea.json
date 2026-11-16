@@ -1,0 +1,9 @@
+{
+  "sourceId": "iea",
+  "originalUrl": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+  "locator": "Energy demand from AI → Data centre electricity consumption; 2024 estimate and 2030 Base Case",
+  "retrievedAt": "2026-11-16T02:30:46Z",
+  "captureMethod": "Agent-transcribed short excerpt, compared with accessible official HTML or PDF; not a full report mirror. IEA excerpt joins two source passages.",
+  "excerpt": "Electricity consumption from data centres is estimated to amount to around 415 terawatt hours (TWh), or about 1.5% of global electricity consumption in 2024. Global electricity consumption for data centres is projected to double to reach around 945 TWh by 2030 in the Base Case.",
+  "sha256": "637c631330625df48290827d66c75b31a8ad1460af783417ac76702b9e7f824e"
+}

@@ -1,0 +1,1478 @@
+{
+  "schemaVersion": "1.0.0",
+  "provider": "crossref",
+  "checkedAt": "2026-11-16T02:22:56.069Z",
+  "requests": 11,
+  "captures": [
+    {
+      "topic": "efficiency",
+      "query": "energy efficient large language model inference",
+      "requestUrl": "https://api.crossref.org/works?query.title=energy+efficient+large+language+model+inference&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.64252/qwxkxm32",
+          "title": [
+            "Energy-Efficient Cloud Infrastructure Design For Large Language Model Training And Inference"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                22
+              ]
+            ]
+          },
+          "container-title": [
+            "International Journal of Environmental Sciences"
+          ]
+        },
+        {
+          "DOI": "10.1145/3679240.3734604",
+          "title": [
+            "StoreLLM: Energy Efficient Large Language Model Inference with Permanently Pre-stored Attention Matrices"
+          ],
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                16
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                17
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                6,
+                16
+              ]
+            ]
+          },
+          "container-title": [
+            "Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems"
+          ]
+        },
+        {
+          "DOI": "10.1109/csitss67709.2025.11295492",
+          "title": [
+            "Smart Meta-Controller: Energy Efficient Dynamic Routing for Large Language Model Inference Systems"
+          ],
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                20
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                20
+              ]
+            ]
+          },
+          "container-title": [
+            "2025 9th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "safety",
+      "query": "artificial intelligence safety red teaming",
+      "requestUrl": "https://api.crossref.org/works?query.title=artificial+intelligence+safety+red+teaming&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.63813/mdvh6041",
+          "title": [
+            "Red Teaming artificial intelligence for social good - The PLAYBOOK"
+          ],
+          "type": "edited-book",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                1
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "DOI": "10.1007/978-3-031-60215-3_13",
+          "title": [
+            "Artificial Intelligence Cyberattacks in Red Teaming: A Scoping Review"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                11
+              ]
+            ]
+          },
+          "container-title": [
+            "Lecture Notes in Networks and Systems",
+            "Good Practices and New Perspectives in Information Systems and Technologies"
+          ]
+        },
+        {
+          "DOI": "10.1016/j.jnr.2026.09.002",
+          "title": [
+            "Red teaming generative artificial intelligence in nursing education: A risk-based audit"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                10
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                10
+              ]
+            ]
+          },
+          "container-title": [
+            "Journal of Nursing Regulation"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "privacy",
+      "query": "differential privacy machine learning",
+      "requestUrl": "https://api.crossref.org/works?query.title=differential+privacy+machine+learning&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.64137/31079911/ijmst-v2i1p104",
+          "title": [
+            "Privacy-Enhancing Machine Learning with Differential Privacy"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                20
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                20
+              ]
+            ]
+          },
+          "container-title": [
+            "International Journal of Multidisciplinary Sciences and Technology"
+          ]
+        },
+        {
+          "DOI": "10.1201/9781003185284-9",
+          "title": [
+            "Machine Learning with Differential Privacy"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                23
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                23
+              ]
+            ]
+          },
+          "container-title": [
+            "Handbook of Sharing Confidential Data"
+          ]
+        },
+        {
+          "DOI": "10.1561/978-1-63828-477-220251004",
+          "title": [
+            "Local Differential Privacy for Privacy-preserving Machine Learning"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                23
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                23
+              ]
+            ]
+          },
+          "container-title": [
+            "Differential Privacy in Artificial Intelligence"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "interpretability",
+      "query": "mechanistic interpretability language models",
+      "requestUrl": "https://api.crossref.org/works?query.title=mechanistic+interpretability+language+models&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.3233/faia260476",
+          "title": [
+            "Geospatial Mechanistic Interpretability of Large Language Models"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                21
+              ]
+            ]
+          },
+          "container-title": [
+            "Frontiers in Artificial Intelligence and Applications",
+            "Geography According to Foundation Models"
+          ]
+        },
+        {
+          "DOI": "10.1109/isriti68345.2025.11393149",
+          "title": [
+            "Mechanistic Interpretability Driven Evaluation Engine for Large Language Models"
+          ],
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                11
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                11
+              ]
+            ]
+          },
+          "container-title": [
+            "2025 8th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)"
+          ]
+        },
+        {
+          "DOI": "10.1109/inmic65900.2025.11348249",
+          "title": [
+            "Cracking the Circuits: Mechanistic Interpretability in Large Language Models"
+          ],
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                23
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                23
+              ]
+            ]
+          },
+          "container-title": [
+            "2025 27th International Multitopic Conference (INMIC)"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "provenance",
+      "query": "content provenance artificial intelligence copyright",
+      "requestUrl": "https://api.crossref.org/works?query.title=content+provenance+artificial+intelligence+copyright&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.1007/978-3-031-86813-9_12",
+          "title": [
+            "Copyright Evaluation for Content Generated by Artificial Intelligence"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                11
+              ]
+            ]
+          },
+          "container-title": [
+            "Data Science, Machine Intelligence, and Law",
+            "The Challenges of Artificial Intelligence for Law in Europe"
+          ]
+        },
+        {
+          "DOI": "10.1051/shsconf/202317801019",
+          "title": [
+            "On the Copyright of Content Generated by Artificial Intelligence"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                23
+              ]
+            ]
+          },
+          "container-title": [
+            "SHS Web of Conferences"
+          ]
+        },
+        {
+          "DOI": "10.12677/ass.2024.132101",
+          "title": [
+            "Research on Copyright Protection of Artificial Intelligence Generation Content"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Social Sciences"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "accessibility",
+      "query": "artificial intelligence assistive technology accessibility",
+      "requestUrl": "https://api.crossref.org/works?query.title=artificial+intelligence+assistive+technology+accessibility&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.4324/9781003603474-35",
+          "title": [
+            "Strategy 22: Assistive technology (including artificial intelligence)"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                25
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                25
+              ]
+            ]
+          },
+          "container-title": [
+            "What Really Works in Inclusive Education"
+          ]
+        },
+        {
+          "DOI": "10.54254/2753-7064/2026.37576",
+          "title": [
+            "On Artificial Intelligence as Assistive Technology in Archaeological Scholarship"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                13
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                13
+              ]
+            ]
+          },
+          "container-title": [
+            "Communications in Humanities Research"
+          ]
+        },
+        {
+          "DOI": "10.54941/ahfe1005973",
+          "title": [
+            "Accessibility, Assistive Technology and Digital Environments"
+          ],
+          "type": "proceedings",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "container-title": [
+            "AHFE International"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "creative-collaboration",
+      "query": "human AI creative collaboration",
+      "requestUrl": "https://api.crossref.org/works?query.title=human+AI+creative+collaboration&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.5220/0013622300004664",
+          "title": [
+            "Human-AI Collaboration in Creative Endeavours"
+          ],
+          "type": "proceedings-article",
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "container-title": [
+            "Proceedings of the 3rd International Conference on Futuristic Technology"
+          ]
+        },
+        {
+          "DOI": "10.1007/978-3-032-07753-0_8",
+          "title": [
+            "Human-AI and Social Robots Creative Collaboration"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                1
+              ]
+            ]
+          },
+          "container-title": [
+            "Collaborations in Creativity"
+          ]
+        },
+        {
+          "DOI": "10.70917/ijcisim-2026-4347",
+          "title": [
+            "HUMAN–AI COLLABORATION IN CREATIVE CONTENT GENERATION"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                8
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                8
+              ]
+            ]
+          },
+          "container-title": [
+            "International Journal of Computer Information Systems and Industrial Management Applications"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "environment",
+      "query": "data center water energy environmental mitigation",
+      "requestUrl": "https://api.crossref.org/works?query.title=data+center+water+energy+environmental+mitigation&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.1007/s12053-022-10078-1",
+          "title": [
+            "Organizational and psychological measures for data center energy efficiency: barriers and mitigation strategies"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                1
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                1,
+                10
+              ]
+            ]
+          },
+          "container-title": [
+            "Energy Efficiency"
+          ]
+        },
+        {
+          "DOI": "10.1109/mm.2025.3643799",
+          "title": [
+            "Silent Data Corruption: Optimal Mitigation Strategies for Data Center Computing"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                1
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                1
+              ]
+            ]
+          },
+          "container-title": [
+            "IEEE Micro"
+          ]
+        },
+        {
+          "DOI": "10.17509/coelite.v5i1.98157",
+          "title": [
+            "Double Proxy Architecture for Data Center DDoS Mitigation"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                30
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                30
+              ]
+            ]
+          },
+          "container-title": [
+            "Journal of Computer Engineering, Electronics and Information Technology"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "public-interest",
+      "query": "public interest artificial intelligence governance",
+      "requestUrl": "https://api.crossref.org/works?query.title=public+interest+artificial+intelligence+governance&rows=3&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-11-16&select=DOI%2Ctitle%2Ctype%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccontainer-title",
+      "items": [
+        {
+          "DOI": "10.4337/9781035338580.00025",
+          "title": [
+            "The public legitimacy of artificial intelligence governance"
+          ],
+          "type": "book-chapter",
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                9
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026,
+                6,
+                9
+              ]
+            ]
+          },
+          "container-title": [
+            "Handbook on the Global Governance of Artificial Intelligence"
+          ]
+        },
+        {
+          "DOI": "10.52058/2786-5274-2024-3(31)-73-81",
+          "title": [
+            "ARTIFICIAL INTELLIGENCE GOVERNANCE REGULATION IN  PUBLIC ADMINISTRATION"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                17
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                17
+              ]
+            ]
+          },
+          "container-title": [
+            "Наукові інновації та передові технології"
+          ]
+        },
+        {
+          "DOI": "10.1353/sais.2024.a950957",
+          "title": [
+            "Mapping Artificial Intelligence Governance for Public Health Applications"
+          ],
+          "type": "journal-article",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                9
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                9
+              ]
+            ]
+          },
+          "container-title": [
+            "SAIS Review of International Affairs"
+          ]
+        }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-b39f059e7efcc528",
+      "kind": "publication",
+      "title": "On Artificial Intelligence as Assistive Technology in Archaeological Scholarship",
+      "doi": "10.54254/2753-7064/2026.37576",
+      "url": "https://doi.org/10.54254/2753-7064/2026.37576",
+      "sourceId": "crossref",
+      "publicationDate": "2026-10-13",
+      "publicationType": "journal-article",
+      "venue": "Communications in Humanities Research",
+      "topics": [
+        "accessibility"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-11e496317d3b43af",
+      "kind": "publication",
+      "title": "Red teaming generative artificial intelligence in nursing education: A risk-based audit",
+      "doi": "10.1016/j.jnr.2026.09.002",
+      "url": "https://doi.org/10.1016/j.jnr.2026.09.002",
+      "sourceId": "crossref",
+      "publicationDate": "2026-10-01",
+      "publicationType": "journal-article",
+      "venue": "Journal of Nursing Regulation",
+      "topics": [
+        "safety"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-5e9b4fce8656fa6e",
+      "kind": "publication",
+      "title": "HUMAN–AI COLLABORATION IN CREATIVE CONTENT GENERATION",
+      "doi": "10.70917/ijcisim-2026-4347",
+      "url": "https://doi.org/10.70917/ijcisim-2026-4347",
+      "sourceId": "crossref",
+      "publicationDate": "2026-08-08",
+      "publicationType": "journal-article",
+      "venue": "International Journal of Computer Information Systems and Industrial Management Applications",
+      "topics": [
+        "creative-collaboration"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-d803102e87fcf483",
+      "kind": "publication",
+      "title": "Strategy 22: Assistive technology (including artificial intelligence)",
+      "doi": "10.4324/9781003603474-35",
+      "url": "https://doi.org/10.4324/9781003603474-35",
+      "sourceId": "crossref",
+      "publicationDate": "2026-06-25",
+      "publicationType": "book-chapter",
+      "venue": "What Really Works in Inclusive Education",
+      "topics": [
+        "accessibility"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-1081b661db4ad90f",
+      "kind": "publication",
+      "title": "The public legitimacy of artificial intelligence governance",
+      "doi": "10.4337/9781035338580.00025",
+      "url": "https://doi.org/10.4337/9781035338580.00025",
+      "sourceId": "crossref",
+      "publicationDate": "2026-06-09",
+      "publicationType": "book-chapter",
+      "venue": "Handbook on the Global Governance of Artificial Intelligence",
+      "topics": [
+        "public-interest"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-280a7a2f2724d816",
+      "kind": "publication",
+      "title": "Geospatial Mechanistic Interpretability of Large Language Models",
+      "doi": "10.3233/faia260476",
+      "url": "https://doi.org/10.3233/faia260476",
+      "sourceId": "crossref",
+      "publicationDate": "2026-05-21",
+      "publicationType": "book-chapter",
+      "venue": "Frontiers in Artificial Intelligence and Applications",
+      "topics": [
+        "interpretability"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-d98620454bd46040",
+      "kind": "publication",
+      "title": "Double Proxy Architecture for Data Center DDoS Mitigation",
+      "doi": "10.17509/coelite.v5i1.98157",
+      "url": "https://doi.org/10.17509/coelite.v5i1.98157",
+      "sourceId": "crossref",
+      "publicationDate": "2026-04-30",
+      "publicationType": "journal-article",
+      "venue": "Journal of Computer Engineering, Electronics and Information Technology",
+      "topics": [
+        "environment"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-7b362e79d2dc4e04",
+      "kind": "publication",
+      "title": "Privacy-Enhancing Machine Learning with Differential Privacy",
+      "doi": "10.64137/31079911/ijmst-v2i1p104",
+      "url": "https://doi.org/10.64137/31079911/ijmst-v2i1p104",
+      "sourceId": "crossref",
+      "publicationDate": "2026-03-20",
+      "publicationType": "journal-article",
+      "venue": "International Journal of Multidisciplinary Sciences and Technology",
+      "topics": [
+        "privacy"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-1d456d22ae8d7842",
+      "kind": "publication",
+      "title": "Silent Data Corruption: Optimal Mitigation Strategies for Data Center Computing",
+      "doi": "10.1109/mm.2025.3643799",
+      "url": "https://doi.org/10.1109/mm.2025.3643799",
+      "sourceId": "crossref",
+      "publicationDate": "2026-01-01",
+      "publicationType": "journal-article",
+      "venue": "IEEE Micro",
+      "topics": [
+        "environment"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-ca1f9f8ab8295e42",
+      "kind": "publication",
+      "title": "Human-AI and Social Robots Creative Collaboration",
+      "doi": "10.1007/978-3-032-07753-0_8",
+      "url": "https://doi.org/10.1007/978-3-032-07753-0_8",
+      "sourceId": "crossref",
+      "publicationDate": "2026-01-01",
+      "publicationType": "book-chapter",
+      "venue": "Collaborations in Creativity",
+      "topics": [
+        "creative-collaboration"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-8a3a2149d434a490",
+      "kind": "publication",
+      "title": "Cracking the Circuits: Mechanistic Interpretability in Large Language Models",
+      "doi": "10.1109/inmic65900.2025.11348249",
+      "url": "https://doi.org/10.1109/inmic65900.2025.11348249",
+      "sourceId": "crossref",
+      "publicationDate": "2025-12-23",
+      "publicationType": "proceedings-article",
+      "venue": "2025 27th International Multitopic Conference (INMIC)",
+      "topics": [
+        "interpretability"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-6b3c9a00738c3941",
+      "kind": "publication",
+      "title": "Mechanistic Interpretability Driven Evaluation Engine for Large Language Models",
+      "doi": "10.1109/isriti68345.2025.11393149",
+      "url": "https://doi.org/10.1109/isriti68345.2025.11393149",
+      "sourceId": "crossref",
+      "publicationDate": "2025-12-11",
+      "publicationType": "proceedings-article",
+      "venue": "2025 8th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)",
+      "topics": [
+        "interpretability"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-24dded8632df3152",
+      "kind": "publication",
+      "title": "Smart Meta-Controller: Energy Efficient Dynamic Routing for Large Language Model Inference Systems",
+      "doi": "10.1109/csitss67709.2025.11295492",
+      "url": "https://doi.org/10.1109/csitss67709.2025.11295492",
+      "sourceId": "crossref",
+      "publicationDate": "2025-11-20",
+      "publicationType": "proceedings-article",
+      "venue": "2025 9th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)",
+      "topics": [
+        "efficiency"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-c23ad93edc4e1490",
+      "kind": "publication",
+      "title": "Local Differential Privacy for Privacy-preserving Machine Learning",
+      "doi": "10.1561/978-1-63828-477-220251004",
+      "url": "https://doi.org/10.1561/978-1-63828-477-220251004",
+      "sourceId": "crossref",
+      "publicationDate": "2025-07-23",
+      "publicationType": "book-chapter",
+      "venue": "Differential Privacy in Artificial Intelligence",
+      "topics": [
+        "privacy"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-b7ada0b4f679abbd",
+      "kind": "publication",
+      "title": "Red Teaming artificial intelligence for social good - The PLAYBOOK",
+      "doi": "10.63813/mdvh6041",
+      "url": "https://doi.org/10.63813/mdvh6041",
+      "sourceId": "crossref",
+      "publicationDate": "2025-07-01",
+      "publicationType": "other",
+      "venue": "Venue not supplied",
+      "topics": [
+        "safety"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-2f3528cc228cfc40",
+      "kind": "publication",
+      "title": "Energy-Efficient Cloud Infrastructure Design For Large Language Model Training And Inference",
+      "doi": "10.64252/qwxkxm32",
+      "url": "https://doi.org/10.64252/qwxkxm32",
+      "sourceId": "crossref",
+      "publicationDate": "2025-06-22",
+      "publicationType": "journal-article",
+      "venue": "International Journal of Environmental Sciences",
+      "topics": [
+        "efficiency"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-a5e05485d9e638c1",
+      "kind": "publication",
+      "title": "StoreLLM: Energy Efficient Large Language Model Inference with Permanently Pre-stored Attention Matrices",
+      "doi": "10.1145/3679240.3734604",
+      "url": "https://doi.org/10.1145/3679240.3734604",
+      "sourceId": "crossref",
+      "publicationDate": "2025-06-17",
+      "publicationType": "proceedings-article",
+      "venue": "Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems",
+      "topics": [
+        "efficiency"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-5f77bcdd35ea3662",
+      "kind": "publication",
+      "title": "Human-AI Collaboration in Creative Endeavours",
+      "doi": "10.5220/0013622300004664",
+      "url": "https://doi.org/10.5220/0013622300004664",
+      "sourceId": "crossref",
+      "publicationDate": "2025-01-01",
+      "publicationType": "proceedings-article",
+      "venue": "Proceedings of the 3rd International Conference on Futuristic Technology",
+      "topics": [
+        "creative-collaboration"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-8d6ec199159d9923",
+      "kind": "publication",
+      "title": "Accessibility, Assistive Technology and Digital Environments",
+      "doi": "10.54941/ahfe1005973",
+      "url": "https://doi.org/10.54941/ahfe1005973",
+      "sourceId": "crossref",
+      "publicationDate": "2025-01-01",
+      "publicationType": "other",
+      "venue": "AHFE International",
+      "topics": [
+        "accessibility"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-93225d33fd154b27",
+      "kind": "publication",
+      "title": "Copyright Evaluation for Content Generated by Artificial Intelligence",
+      "doi": "10.1007/978-3-031-86813-9_12",
+      "url": "https://doi.org/10.1007/978-3-031-86813-9_12",
+      "sourceId": "crossref",
+      "publicationDate": "2025-01-01",
+      "publicationType": "book-chapter",
+      "venue": "Data Science, Machine Intelligence, and Law",
+      "topics": [
+        "provenance"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-238dae06d6c00eda",
+      "kind": "publication",
+      "title": "Mapping Artificial Intelligence Governance for Public Health Applications",
+      "doi": "10.1353/sais.2024.a950957",
+      "url": "https://doi.org/10.1353/sais.2024.a950957",
+      "sourceId": "crossref",
+      "publicationDate": "2024-09-01",
+      "publicationType": "journal-article",
+      "venue": "SAIS Review of International Affairs",
+      "topics": [
+        "public-interest"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-638898cd74a3c828",
+      "kind": "publication",
+      "title": "Machine Learning with Differential Privacy",
+      "doi": "10.1201/9781003185284-9",
+      "url": "https://doi.org/10.1201/9781003185284-9",
+      "sourceId": "crossref",
+      "publicationDate": "2024-08-23",
+      "publicationType": "book-chapter",
+      "venue": "Handbook of Sharing Confidential Data",
+      "topics": [
+        "privacy"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-ad81aa0260721e3f",
+      "kind": "publication",
+      "title": "ARTIFICIAL INTELLIGENCE GOVERNANCE REGULATION IN PUBLIC ADMINISTRATION",
+      "doi": "10.52058/2786-5274-2024-3(31)-73-81",
+      "url": "https://doi.org/10.52058/2786-5274-2024-3(31)-73-81",
+      "sourceId": "crossref",
+      "publicationDate": "2024-03-17",
+      "publicationType": "journal-article",
+      "venue": "Наукові інновації та передові технології",
+      "topics": [
+        "public-interest"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-016689fb89ca101e",
+      "kind": "publication",
+      "title": "Research on Copyright Protection of Artificial Intelligence Generation Content",
+      "doi": "10.12677/ass.2024.132101",
+      "url": "https://doi.org/10.12677/ass.2024.132101",
+      "sourceId": "crossref",
+      "publicationDate": "2024-01-01",
+      "publicationType": "journal-article",
+      "venue": "Advances in Social Sciences",
+      "topics": [
+        "provenance"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-591e407a544b0971",
+      "kind": "publication",
+      "title": "Artificial Intelligence Cyberattacks in Red Teaming: A Scoping Review",
+      "doi": "10.1007/978-3-031-60215-3_13",
+      "url": "https://doi.org/10.1007/978-3-031-60215-3_13",
+      "sourceId": "crossref",
+      "publicationDate": "2024-01-01",
+      "publicationType": "book-chapter",
+      "venue": "Lecture Notes in Networks and Systems",
+      "topics": [
+        "safety"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-b6192e255132418a",
+      "kind": "publication",
+      "title": "Organizational and psychological measures for data center energy efficiency: barriers and mitigation strategies",
+      "doi": "10.1007/s12053-022-10078-1",
+      "url": "https://doi.org/10.1007/s12053-022-10078-1",
+      "sourceId": "crossref",
+      "publicationDate": "2023-01-01",
+      "publicationType": "journal-article",
+      "venue": "Energy Efficiency",
+      "topics": [
+        "environment"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "paper-c667b2732da92dbe",
+      "kind": "publication",
+      "title": "On the Copyright of Content Generated by Artificial Intelligence",
+      "doi": "10.1051/shsconf/202317801019",
+      "url": "https://doi.org/10.1051/shsconf/202317801019",
+      "sourceId": "crossref",
+      "publicationDate": "2023-01-01",
+      "publicationType": "journal-article",
+      "venue": "SHS Web of Conferences",
+      "topics": [
+        "provenance"
+      ],
+      "retrievedAt": "2026-11-16T02:22:56.069Z",
+      "peerReview": "unverified",
+      "review": {
+        "status": "metadata_checked",
+        "checkedAt": "2026-11-16T02:22:56.069Z",
+        "humanReviewedAt": null,
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
+      }
+    }
+  ],
+  "contentHash": "129397a1d907a2a9d361a8cbcad46685e624c8096ce0e501940e5d784b512141"
+}
