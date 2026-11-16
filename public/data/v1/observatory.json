@@ -1153,7 +1153,7 @@
       "id": "ecologits",
       "kind": "source",
       "title": "EcoLogits",
-      "publisher": "GenAI Impact",
+      "publisher": "CodeCarbon / EcoLogits contributors",
       "url": "https://ecologits.ai/latest/",
       "accessMode": "reference_only",
       "automated": false,
@@ -2292,6 +2292,460 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+      }
+    }
+  ],
+  "perspectives": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-energy-context",
+      "kind": "perspective",
+      "title": "AI energy in the wider digital system",
+      "dimension": "environment",
+      "question": "How should AI electricity demand be compared with other digital infrastructure?",
+      "classification": "interpretation",
+      "established": "IEA estimates 415 TWh for all data centers in 2024 and projects 945 TWh in its 2030 Base Case. These totals include non-AI activity.",
+      "notEstablished": "This does not isolate the energy of one prompt, establish a universal comparison with streaming or search, or erase local impacts.",
+      "perspectives": [
+        {
+          "title": "Measure the marginal cost",
+          "argument": "Evaluate whether a specific AI use adds demand, substitutes for another activity, or provides a benefit worth its resource cost."
+        },
+        {
+          "title": "Keep aggregate demand in view",
+          "argument": "Even a small share of global demand can create serious local constraints; absolute growth and infrastructure decisions still need scrutiny."
+        }
+      ],
+      "values": [
+        "Stewardship",
+        "Proportionality",
+        "Fair access"
+      ],
+      "uncertainty": "AI attribution, marginal versus average consumption, hardware utilization, and location-specific water and grid effects remain uncertain.",
+      "interventions": [
+        "Disclose workload boundaries and location.",
+        "Compare equivalent services rather than isolated anecdotes.",
+        "Publish local impacts and realistic demand scenarios."
+      ],
+      "sourceIds": [
+        "iea",
+        "doe",
+        "eia",
+        "usgs-water"
+      ],
+      "evidenceRefs": [
+        "evidence-iea",
+        "evidence-doe"
+      ],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-responsibility",
+      "kind": "perspective",
+      "title": "Who is responsible?",
+      "dimension": "accountability",
+      "question": "How should responsibility be shared among companies, developers, regulators, and users?",
+      "classification": "interpretation",
+      "established": "Energy reports describe infrastructure-scale consumption. NIST offers a voluntary framework for considering risk across the design, development, use, and evaluation of AI systems.",
+      "notEstablished": "Aggregate consumption does not establish the moral character of an individual user, and voluntary framework adoption does not demonstrate compliance or good outcomes.",
+      "perspectives": [
+        {
+          "title": "Responsibility follows control",
+          "argument": "Infrastructure owners and deployers control many consequential choices about sourcing, model design, disclosure, and remedies."
+        },
+        {
+          "title": "Agency exists at several scales",
+          "argument": "Developers and users can make bounded choices, while regulators and public institutions shape incentives and minimum obligations. Their capacities differ."
+        }
+      ],
+      "values": [
+        "Accountability",
+        "Agency",
+        "Justice"
+      ],
+      "uncertainty": "How duties and costs should be allocated across actors is a normative question; actual leverage and affected communities vary.",
+      "interventions": [
+        "Require meaningful disclosure and independent evaluation.",
+        "Design procurement and deployment requirements around specific harms.",
+        "Include affected communities in infrastructure and governance decisions."
+      ],
+      "sourceIds": [
+        "nist",
+        "iea",
+        "oecd"
+      ],
+      "evidenceRefs": [
+        "evidence-iea"
+      ],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-copyright",
+      "kind": "perspective",
+      "title": "Copyright, consent & training data",
+      "dimension": "creativity",
+      "question": "What obligations should apply when creative work becomes training data?",
+      "classification": "interpretation",
+      "established": "The U.S. Copyright Office treats digital replicas, output copyrightability, and generative-AI training as distinct subjects in its AI report series.",
+      "notEstablished": "One legal report does not settle every jurisdiction, dataset, licensing dispute, or ethical question. Technical access to a work does not by itself establish meaningful consent.",
+      "perspectives": [
+        {
+          "title": "Consent and compensation matter",
+          "argument": "Creators can reasonably seek control, attribution, bargaining power, and compensation for uses of their work."
+        },
+        {
+          "title": "Learning and public access matter",
+          "argument": "Research, expression, competition, and access also carry value. The legal and ethical basis for particular uses requires context, not a universal slogan."
+        }
+      ],
+      "values": [
+        "Consent",
+        "Creative freedom",
+        "Fair compensation"
+      ],
+      "uncertainty": "Training-data provenance, jurisdiction-specific law, market effects, and workable licensing arrangements are incomplete or contested.",
+      "interventions": [
+        "Improve dataset documentation and licensing clarity.",
+        "Offer meaningful creator choices and accessible remedies.",
+        "Evaluate compensation and public-interest research exceptions on their actual effects."
+      ],
+      "sourceIds": [
+        "copyright",
+        "c2pa",
+        "osi"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-authorship",
+      "kind": "perspective",
+      "title": "AI-assisted artistic authorship",
+      "dimension": "creativity",
+      "question": "How do intention, execution, and creative control relate to authorship?",
+      "classification": "interpretation",
+      "established": "The U.S. Copyright Office’s Part 2 addresses the copyrightability of outputs created using generative AI. C2PA provides a technical standard for documenting digital-content origin and edits.",
+      "notEstablished": "A provenance manifest does not establish artistic merit, human authorship, training consent, or legal protection. Copyrightability is not the same question as personal meaning.",
+      "perspectives": [
+        {
+          "title": "Authorship includes meaningful human choices",
+          "argument": "Composition, direction, selection, editing, and context can be creatively significant; evaluate the actual human contribution."
+        },
+        {
+          "title": "Manual craft has independent value",
+          "argument": "Skill, embodied practice, labor, and a work’s history can matter even where automation can produce a similar surface result."
+        }
+      ],
+      "values": [
+        "Authorship",
+        "Craft",
+        "Honesty"
+      ],
+      "uncertainty": "The weight of different contributions varies across artistic practices and legal contexts. The tool label alone cannot resolve it.",
+      "interventions": [
+        "Describe material AI involvement honestly where it matters.",
+        "Preserve source permissions and human contributions.",
+        "Let traditional and AI-assisted practices coexist without claiming inherent superiority."
+      ],
+      "sourceIds": [
+        "copyright",
+        "c2pa",
+        "akashic-creative"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-accessibility",
+      "kind": "perspective",
+      "title": "Accessibility & creative access",
+      "dimension": "creativity",
+      "question": "When do AI tools remove barriers, and when do they introduce new ones?",
+      "classification": "interpretation",
+      "established": "The FDA lists AI-enabled medical devices authorized for marketing in the U.S.; the list itself states that it is not comprehensive. This is a bounded regulatory record, not a general accessibility or benefit measure.",
+      "notEstablished": "Neither an authorized device nor a plausible use case establishes that all AI tools are accessible, affordable, clinically effective, or beneficial to every person.",
+      "perspectives": [
+        {
+          "title": "Reducing execution barriers can expand agency",
+          "argument": "Assistive interfaces and creative tools may help people express intentions that were difficult to execute; evaluate these uses with the people affected."
+        },
+        {
+          "title": "Access must include control and reliability",
+          "argument": "Cost, privacy, errors, inaccessible interfaces, and dependency can create barriers of their own. Affected people should define success."
+        }
+      ],
+      "values": [
+        "Dignity",
+        "Inclusion",
+        "Autonomy"
+      ],
+      "uncertainty": "Independent evaluations across disabilities, languages, income levels, and real-world settings are needed; this release has no universal effect estimate.",
+      "interventions": [
+        "Co-design and test with affected users.",
+        "Keep accessible non-AI alternatives and human support.",
+        "Measure task-specific outcomes, failure modes, affordability, and user control."
+      ],
+      "sourceIds": [
+        "fda",
+        "nist",
+        "akashic-research"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-local-models",
+      "kind": "perspective",
+      "title": "Local models & commercial inference",
+      "dimension": "technology",
+      "question": "When is running a model locally the more responsible choice?",
+      "classification": "interpretation",
+      "established": "CodeCarbon supports estimating energy and emissions from code running on accessible hardware. EcoLogits estimates supported remote API inference impacts. OSI frames open source AI around freedoms to use, study, modify, and share.",
+      "notEstablished": "Local does not automatically mean private, efficient, or open source. An API estimate is not direct metering, and access to model weights alone does not establish an open source license.",
+      "perspectives": [
+        {
+          "title": "Local control can be valuable",
+          "argument": "On-device execution can increase control over data flows, availability, and customization when the whole application is designed accordingly."
+        },
+        {
+          "title": "Shared infrastructure can be valuable",
+          "argument": "Commercial inference can provide accessible capability without buying hardware. Resource efficiency depends on utilization, model choice, and the actual system boundary."
+        }
+      ],
+      "values": [
+        "Privacy",
+        "Autonomy",
+        "Resource efficiency"
+      ],
+      "uncertainty": "Comparable quality, hardware utilization, embodied impacts, model licensing, data flows, and provider infrastructure are often incompletely documented.",
+      "interventions": [
+        "Choose the smallest suitable model and evaluate quality.",
+        "Inspect licenses and actual network/data flows.",
+        "Measure comparable workloads before drawing energy conclusions."
+      ],
+      "sourceIds": [
+        "codecarbon",
+        "ecologits",
+        "osi",
+        "ai-energy-score"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-labor",
+      "kind": "perspective",
+      "title": "Labor displacement & task augmentation",
+      "dimension": "creativity",
+      "question": "What does occupational exposure tell us about actual work?",
+      "classification": "interpretation",
+      "established": "The ILO’s refined index measures occupational exposure to generative AI and emphasizes that occupations contain tasks requiring human input; it identifies job transformation as the most likely overall impact in its analysis.",
+      "notEstablished": "Exposure is not observed job loss, a forecast for an individual worker, or proof that productivity gains will be fairly distributed.",
+      "perspectives": [
+        {
+          "title": "Augmentation can improve some work",
+          "argument": "Automation may reduce repetitive tasks and expand what workers can do. Its value depends on task design, reliability, and who shares in the gains."
+        },
+        {
+          "title": "Displacement and bargaining power deserve attention",
+          "argument": "Employers can also use automation to reduce staffing or control work. Transition costs and creative labor have value that aggregate productivity can miss."
+        }
+      ],
+      "values": [
+        "Livelihoods",
+        "Fair distribution",
+        "Worker agency"
+      ],
+      "uncertainty": "Adoption rates, substitution versus complementarity, demand changes, bargaining power, and longer-term employment effects vary by sector and region.",
+      "interventions": [
+        "Include workers in deployment decisions.",
+        "Track realized job quality, wages, and employment alongside task measures.",
+        "Support transitions, fair compensation, and meaningful bargaining."
+      ],
+      "sourceIds": [
+        "ilo",
+        "oecd"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-disclosure",
+      "kind": "perspective",
+      "title": "Corporate disclosure & verified conduct",
+      "dimension": "accountability",
+      "question": "How much does a transparency report tell us about a company’s behavior?",
+      "classification": "interpretation",
+      "established": "The Foundation Model Transparency Index evaluates transparency across foundation-model developers. NIST provides a risk-management framework; neither is a comprehensive moral ranking.",
+      "notEstablished": "More disclosure does not itself prove responsible conduct, and a missing disclosure does not establish the precise hidden behavior. Self-reporting is not independent verification.",
+      "perspectives": [
+        {
+          "title": "Disclosure enables scrutiny",
+          "argument": "Clear documentation can make practices, responsibilities, and gaps easier for researchers, users, and regulators to examine."
+        },
+        {
+          "title": "Outcomes and enforcement also matter",
+          "argument": "An organization can disclose a harmful practice. Independent audits, remedies, and enforceable obligations need attention alongside published policies."
+        }
+      ],
+      "values": [
+        "Transparency",
+        "Accountability",
+        "Remedy"
+      ],
+      "uncertainty": "Audit independence, coverage, omitted activities, method changes between index editions, and the gap between policy and practice require investigation.",
+      "interventions": [
+        "Publish comparable documentation and audit scope.",
+        "Use independent evidence to test material claims.",
+        "Track incident response and remedies without assigning an aggregate moral score."
+      ],
+      "sourceIds": [
+        "fmti",
+        "nist",
+        "aiid"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-rebound",
+      "kind": "perspective",
+      "title": "Efficiency gains & aggregate growth",
+      "dimension": "technology",
+      "question": "Can systems become more efficient while their total footprint grows?",
+      "classification": "interpretation",
+      "established": "IEA projects rising total data-center electricity in its 2030 Base Case. The AI Index documents selected declining API prices at a fixed benchmark threshold. These measure different quantities.",
+      "notEstablished": "Cheaper inference is not a direct measurement of lower energy, and improved efficiency per accepted output does not guarantee falling aggregate demand.",
+      "perspectives": [
+        {
+          "title": "Efficiency is a practical improvement",
+          "argument": "Avoiding unnecessary computation and making useful tasks less resource-intensive are tractable engineering goals."
+        },
+        {
+          "title": "Total demand remains a separate question",
+          "argument": "Lower costs can enable more usage. Absolute electricity, water, emissions, and the distribution of benefits still need measurement and governance."
+        }
+      ],
+      "values": [
+        "Stewardship",
+        "Useful progress",
+        "Systemic responsibility"
+      ],
+      "uncertainty": "Price-to-energy relationships, induced demand, substitution, grid decarbonization, and workload composition are not established by these two charts.",
+      "interventions": [
+        "Measure intensity and absolute demand separately.",
+        "Test complete workflows, including preparation and retries.",
+        "Pair engineering improvements with resource planning and transparent reporting."
+      ],
+      "sourceIds": [
+        "iea",
+        "ai-index",
+        "ecologits",
+        "green-software"
+      ],
+      "evidenceRefs": [
+        "evidence-iea",
+        "evidence-price"
+      ],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "topic-safety-benefits",
+      "kind": "perspective",
+      "title": "Safety, misuse & beneficial applications",
+      "dimension": "safety",
+      "question": "How do we evaluate risks alongside specific beneficial uses?",
+      "classification": "interpretation",
+      "established": "Incident and vulnerability resources document reported failures, while the FDA maintains a scoped list of AI-enabled medical devices authorized for U.S. marketing. These are different evidence populations.",
+      "notEstablished": "Incident counts and device authorizations cannot be subtracted to produce a net lives-saved figure. Neither reporting system supplies a universal judgment about every AI use.",
+      "perspectives": [
+        {
+          "title": "Preventing harm is an obligation",
+          "argument": "Misuse, unsafe deployment, privacy violations, and unreliable high-stakes systems warrant safeguards, evaluation, and remedy."
+        },
+        {
+          "title": "Specific benefits deserve evaluation too",
+          "argument": "A tool may improve a particular clinical, accessibility, or research task. Establish its effect using suitable comparators and independent outcomes evidence."
+        }
+      ],
+      "values": [
+        "Safety",
+        "Human welfare",
+        "Evidence quality"
+      ],
+      "uncertainty": "Underreporting, selection bias, deployment context, external validity, severity, and long-term outcomes limit broad comparisons.",
+      "interventions": [
+        "Evaluate risks and benefits for a specific use and population.",
+        "Use staged deployment, monitoring, human oversight, and incident response.",
+        "Preserve independent assessment and accessible alternatives."
+      ],
+      "sourceIds": [
+        "aiid",
+        "avid",
+        "mit-risk",
+        "fda",
+        "nist"
+      ],
+      "evidenceRefs": [],
+      "review": {
+        "status": "agent_checked",
+        "checkedAt": "2026-11-16T02:50:16Z",
+        "humanReviewedAt": null,
+        "note": "Editorial interpretation with primary-source context. Claims, normative positions, unknowns, and interventions remain separated. Independent human content review is pending."
       }
     }
   ],

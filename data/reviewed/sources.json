@@ -196,7 +196,7 @@
     "id": "ecologits",
     "kind": "source",
     "title": "EcoLogits",
-    "publisher": "GenAI Impact",
+    "publisher": "CodeCarbon / EcoLogits contributors",
     "url": "https://ecologits.ai/latest/",
     "accessMode": "reference_only",
     "automated": false,

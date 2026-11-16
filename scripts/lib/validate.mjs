@@ -3,7 +3,7 @@ import addFormats from "ajv-formats";
 import { readdir, readFile } from "node:fs/promises";
 import { readJson, hash } from "./io.mjs";
 export async function loadEvidence() {
-  return { ...await readJson("data/reviewed/evidence.json"), sources: await readJson("data/reviewed/sources.json"), publications: await readJson("data/reviewed/publications.json") };
+  return { ...await readJson("data/reviewed/evidence.json"), sources: await readJson("data/reviewed/sources.json"), publications: await readJson("data/reviewed/publications.json"), perspectives: await readJson("data/reviewed/perspectives.json") };
 }
 export async function createSchemaValidator() {
   const ajv = new Ajv2020({ allErrors: true, strict: true });

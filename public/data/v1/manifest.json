@@ -4,12 +4,12 @@
   "kind": "dataset-manifest",
   "releaseVersion": "0.1.0",
   "schemaDirectory": "schemas/v1",
-  "materializedAt": "2026-11-16T02:30:46Z",
+  "materializedAt": "2026-11-16T02:50:16Z",
   "files": [
     {
       "path": "data/v1/observatory.json",
-      "sha256": "8507f48c1e97f242bc4f660479e3b7d99d5c6ee5adb702e69be68de899d79c32",
-      "bytes": 96560
+      "sha256": "569fe4f889371c039cc286169405600d90867392bfc7d77b3fe693beee04b981",
+      "bytes": 118877
     }
   ],
   "recordCounts": {
@@ -21,7 +21,8 @@
     "visualizations": 3,
     "organizations": 15,
     "sources": 32,
-    "publications": 13
+    "publications": 13,
+    "perspectives": 10
   },
   "sourceAttributions": [
     {

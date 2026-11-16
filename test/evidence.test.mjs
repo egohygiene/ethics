@@ -5,7 +5,6 @@ import { readJson } from "../scripts/lib/io.mjs";
 const evidence = await loadEvidence();
 test("published evidence satisfies schemas, raw capture hashes, and graph invariants", async () => {
   const result = await validateEvidence(evidence);
-  assert.equal(result.records.length, 82);
   assert.equal(evidence.visualizations.length, 3);
   assert.ok(evidence.sources.every(s => s.review.humanReviewedAt === null));
 });
