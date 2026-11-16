@@ -1,14 +1,16 @@
 # First public deployment
 
-## Current boundary
+## Release state
 
-The implementation branch is reviewable; it is not a public deployment. Do not merge the PR without owner approval. The parent roadmap remains open until the deployed custom domain is verified.
+The maintainer merged [PR #7](https://github.com/egohygiene/ethics/pull/7), configured Pages and DNS, and triggered a successful main-branch deployment. The first public HTTPS release is verified at https://ethics.egohygiene.io. See the [verification receipt](qa/public-deployment.md) for the exact deployed commit, public dataset hash, browser checks, and HTTPS enforcement status. Future source or code changes continue through owner-reviewed PRs.
+
+## Initial setup history
 
 Initial environment observations (2026-11-15, America/New_York): repository metadata reports `has_pages: false`; `GET /repos/egohygiene/ethics/pages` returns 404; `ethics.egohygiene.io` does not resolve; HTTPS could not be established. Civics and Akashic sibling domains return HTTP 200. The root `egohygiene.io` returned 404, so the footer's Ego Hygiene link uses the public GitHub organization.
 
-The available credential also attempted to enable workflow-based Pages with `POST /repos/egohygiene/ethics/pages` after the implementation PR was opened. GitHub rejected it with **HTTP 403, “Resource not accessible by integration.”** No Pages setting changed and no code was deployed. A maintainer with Pages administration access must perform the setup below.
+The available credential also attempted to enable workflow-based Pages with `POST /repos/egohygiene/ethics/pages` after the implementation PR was opened. GitHub rejected it with **HTTP 403, “Resource not accessible by integration.”** That rejected request changed no Pages setting and deployed no code. The maintainer subsequently completed Pages/DNS setup. The checklist below remains a setup and recovery reference.
 
-## Maintainer steps
+## Setup and recovery checklist
 
 1. Review and approve the implementation PR. Check the committed screenshots, source excerpts and exact tables, evidence limitations, and CI results. Independent human evidence review is still pending; if performed, record reviewer, scope, and actual time rather than replacing agent checks with an implied approval.
 2. In **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the source. The deployment workflow is `.github/workflows/pages.yml`. It validates evidence, runs unit and production-browser checks, builds, and deploys only `refs/heads/main`. PRs never deploy production.

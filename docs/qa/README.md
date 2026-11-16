@@ -1,6 +1,6 @@
 # v0.1 verification record
 
-Verified locally in the execution environment on 2026-11-15 (America/New_York). This is an implementation/agent review record, not independent human evidence review or public deployment verification.
+Verified locally in the execution environment on 2026-11-15 (America/New_York). The local results below are implementation/agent checks, not independent human evidence review. The subsequent live-release checks are recorded separately in the [public deployment receipt](public-deployment.md).
 
 ## Results
 
@@ -19,7 +19,7 @@ Verified locally in the execution environment on 2026-11-15 (America/New_York). 
 | Runtime privacy | Observed requests remain on the static origin; no third-party requests or runtime AI |
 | Failure recovery | Snapshot loading failure exposes a working retry and repository fallback, with no invented data |
 | Source availability | 44 accessible URLs; 6 registered DOIs with publisher destinations restricted or unreachable; no observed broken URL in the final report |
-| Public custom domain | Not deployed or verified; hostname did not resolve and GitHub reports Pages disabled |
+| Public custom domain | Subsequent deployment verified over HTTPS; approved merge commit and public evidence hash match. See the public deployment receipt. |
 
 The browser tests exercise all seven sections, the three charts and exact tables, evidence-lens coverage gaps, all ten perspective topics, nine-theme research filtering and empty states, resource search, theme persistence, calculator changes and zero accepted outputs, hashes, loading retry, keyboard access, reduced motion, and the runtime request boundary. See `test/`, `playwright.config.js`, and [the link-health receipt](link-checks.json). Automated accessibility checks and Chromium coverage do not substitute for independent screen-reader/user testing or Firefox/Safari testing; those have not been performed.
 
@@ -46,6 +46,8 @@ Reproduce with `npm run build` and `CHROMIUM_PATH=/usr/bin/chromium npm run qa:s
 - OpenAlex API access returned HTTP 429; Crossref is the one working automated discovery feed. Six publisher destinations restrict access or could not be reached, though their DOIs are verified in Crossref. No restricted full text is scraped.
 - The workflow model uses arbitrary units and is explicitly the author's hypothesis, not measured energy. No universal per-prompt or model-specific energy claim is made.
 
-## Delivery boundary
+## Public release verification
 
-CI, Pages deployment, monthly candidate PRs, and weekly link-health workflows are implemented. Remote GitHub check results are recorded in the review PR; this file records local checks separately. Pages setup, the ethics DNS CNAME, owner-approved merge, HTTPS provisioning, and public commit/data-hash verification remain required. See [deployment instructions](../deployment.md). Parent roadmap #6 must remain open until the public target is verified.
+The maintainer merged PR #7 and configured the site. Main-branch quality and Pages deployment workflows both passed. The HTTPS site, build revision, public JSON hash, and live desktop/mobile interactions were verified separately from these local tests. See [the public receipt](public-deployment.md), [machine-readable checks](public-deployment.json), and live [desktop](screenshots/live-desktop.png) / [mobile](screenshots/live-mobile.png) screenshots.
+
+This deployment does not refresh the underlying historical report values or imply human evidence review. Current operational limits, including HTTPS enforcement and refresh-PR policy visibility, are explicit in the receipt. Future PRs require owner approval before merge.
