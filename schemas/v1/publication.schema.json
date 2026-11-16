@@ -17,7 +17,8 @@
     "topics",
     "retrievedAt",
     "peerReview",
-    "review"
+    "review",
+    "publicationDatePrecision"
   ],
   "properties": {
     "schemaVersion": {
@@ -80,6 +81,13 @@
     },
     "review": {
       "$ref": "common.schema.json#/$defs/review"
+    },
+    "publicationDatePrecision": {
+      "enum": [
+        "day",
+        "month",
+        "year"
+      ]
     }
   },
   "additionalProperties": false

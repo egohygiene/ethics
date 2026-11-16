@@ -1,0 +1,411 @@
+{
+  "checkedAt": "2026-11-16T03:05:24.492Z",
+  "requests": 57,
+  "counts": {
+    "accessible": 44,
+    "identifier_verified_publisher_restricted": 6
+  },
+  "note": "Bounded link health and DOI-registration checks only. No report scraping, truth review, or automatic publication of new evidence. Restricted/unverified responses are retained explicitly.",
+  "results": [
+    {
+      "url": "https://www.iea.org/reports/energy-and-ai",
+      "checkedAt": "2026-11-16T03:05:18.077Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.iea.org/reports/energy-and-ai",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://eta-publications.lbl.gov/",
+      "checkedAt": "2026-11-16T03:05:18.094Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://eta-publications.lbl.gov/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "checkedAt": "2026-11-16T03:05:18.096Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.eia.gov/opendata/",
+      "checkedAt": "2026-11-16T03:05:18.096Z",
+      "state": "accessible",
+      "httpStatus": 206,
+      "resolvedUrl": "https://www.eia.gov/opendata/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.epa.gov/egrid",
+      "checkedAt": "2026-11-16T03:05:18.350Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.epa.gov/egrid",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+      "checkedAt": "2026-11-16T03:05:18.356Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://ecologits.ai/latest/",
+      "checkedAt": "2026-11-16T03:05:18.389Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://ecologits.ai/latest/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://docs.codecarbon.io/latest/",
+      "checkedAt": "2026-11-16T03:05:18.541Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.codecarbon.io/latest/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://huggingface.github.io/AIEnergyScore/",
+      "checkedAt": "2026-11-16T03:05:18.576Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://huggingface.github.io/AIEnergyScore/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://mlcommons.org/",
+      "checkedAt": "2026-11-16T03:05:18.621Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://mlcommons.org/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://greensoftware.foundation/",
+      "checkedAt": "2026-11-16T03:05:18.643Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://greensoftware.foundation/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://epoch.ai/data",
+      "checkedAt": "2026-11-16T03:05:18.684Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://epoch.ai/data",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "checkedAt": "2026-11-16T03:05:18.923Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://openalex.org/",
+      "checkedAt": "2026-11-16T03:05:19.007Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://openalex.org/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://airisk.mit.edu/",
+      "checkedAt": "2026-11-16T03:05:19.106Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://airisk.mit.edu/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://crfm.stanford.edu/fmti/December-2025/index.html",
+      "checkedAt": "2026-11-16T03:05:19.156Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://crfm.stanford.edu/fmti/December-2025/index.html",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://oecd.ai/en/",
+      "checkedAt": "2026-11-16T03:05:19.289Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://oecd.ai/en/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://incidentdatabase.ai/",
+      "checkedAt": "2026-11-16T03:05:19.313Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://incidentdatabase.ai/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://avidml.org/",
+      "checkedAt": "2026-11-16T03:05:19.367Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://avidml.org/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "checkedAt": "2026-11-16T03:05:19.518Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.copyright.gov/ai/",
+      "checkedAt": "2026-11-16T03:05:19.620Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.copyright.gov/ai/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "checkedAt": "2026-11-16T03:05:19.644Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://opensource.org/ai",
+      "checkedAt": "2026-11-16T03:05:19.788Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://opensource.org/ai",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://c2pa.org/",
+      "checkedAt": "2026-11-16T03:05:19.850Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://c2pa.org/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices",
+      "checkedAt": "2026-11-16T03:05:19.876Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "checkedAt": "2026-11-16T03:05:19.878Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "checkedAt": "2026-11-16T03:05:19.937Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/artificial-intelligence/README.md",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "checkedAt": "2026-11-16T03:05:20.110Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/research/README.md",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "checkedAt": "2026-11-16T03:05:20.213Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://github.com/egohygiene/akashic/blob/main/lists/creative-resources/README.md",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.promptfoo.dev/",
+      "checkedAt": "2026-11-16T03:05:20.288Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.promptfoo.dev/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://opensource.contentauthenticity.org/docs/sdk-repos/c2patool/",
+      "checkedAt": "2026-11-16T03:05:20.386Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://opensource.contentauthenticity.org/docs/sdk-repos/c2patool/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://osf.io/",
+      "checkedAt": "2026-11-16T03:05:20.583Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://osf.io/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "checkedAt": "2026-11-16T03:05:20.617Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf",
+      "checkedAt": "2026-11-16T03:05:20.634Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jnr.2026.09.002",
+      "checkedAt": "2026-11-16T03:05:20.745Z",
+      "state": "identifier_verified_publisher_restricted",
+      "httpStatus": null,
+      "resolvedUrl": null,
+      "note": "DOI verified in Crossref; publisher destination restricts access or could not be reached. Full text and findings are not verified."
+    },
+    {
+      "url": "https://doi.org/10.4324/9781003603474-35",
+      "checkedAt": "2026-11-16T03:05:20.775Z",
+      "state": "identifier_verified_publisher_restricted",
+      "httpStatus": 403,
+      "resolvedUrl": "https://www.taylorfrancis.com/books/9781003603474/chapters/10.4324/9781003603474-35",
+      "note": "DOI verified in Crossref; publisher destination restricts access or could not be reached. Full text and findings are not verified."
+    },
+    {
+      "url": "https://doi.org/10.4337/9781035338580.00025",
+      "checkedAt": "2026-11-16T03:05:20.838Z",
+      "state": "identifier_verified_publisher_restricted",
+      "httpStatus": 403,
+      "resolvedUrl": "https://www.elgaronline.com/view/book/9781035338580/chapter17.xml",
+      "note": "DOI verified in Crossref; publisher destination restricts access or could not be reached. Full text and findings are not verified."
+    },
+    {
+      "url": "https://doi.org/10.3233/faia260476",
+      "checkedAt": "2026-11-16T03:05:20.939Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA260476",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-032-07753-0_8",
+      "checkedAt": "2026-11-16T03:05:21.192Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://link.springer.com/chapter/10.1007/978-3-032-07753-0_8?error=cookies_not_supported&code=6df290c4-e9b6-43be-ab80-94749451763c",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1109/inmic65900.2025.11348249",
+      "checkedAt": "2026-11-16T03:05:21.283Z",
+      "state": "accessible",
+      "httpStatus": 202,
+      "resolvedUrl": "https://ieeexplore.ieee.org/document/11348249/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1109/csitss67709.2025.11295492",
+      "checkedAt": "2026-11-16T03:05:21.344Z",
+      "state": "accessible",
+      "httpStatus": 202,
+      "resolvedUrl": "https://ieeexplore.ieee.org/document/11295492/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1561/978-1-63828-477-220251004",
+      "checkedAt": "2026-11-16T03:05:21.647Z",
+      "state": "identifier_verified_publisher_restricted",
+      "httpStatus": 403,
+      "resolvedUrl": "https://www.emerald.com/books/book/20854/chapter/106968247/Local-Differential-Privacy-for-Privacy-preserving",
+      "note": "DOI verified in Crossref; publisher destination restricts access or could not be reached. Full text and findings are not verified."
+    },
+    {
+      "url": "https://doi.org/10.1145/3679240.3734604",
+      "checkedAt": "2026-11-16T03:05:21.734Z",
+      "state": "identifier_verified_publisher_restricted",
+      "httpStatus": 403,
+      "resolvedUrl": "https://dl.acm.org/doi/10.1145/3679240.3734604",
+      "note": "DOI verified in Crossref; publisher destination restricts access or could not be reached. Full text and findings are not verified."
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-031-86813-9_12",
+      "checkedAt": "2026-11-16T03:05:21.744Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://link.springer.com/chapter/10.1007/978-3-031-86813-9_12?error=cookies_not_supported&code=f3b7ba50-6661-4e5b-9ba7-bccd26a27ee3",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1353/sais.2024.a950957",
+      "checkedAt": "2026-11-16T03:05:22.163Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://muse.jhu.edu/verify?url=%2Farticle%2F950957&r=6918990",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://doi.org/10.1201/9781003185284-9",
+      "checkedAt": "2026-11-16T03:05:22.263Z",
+      "state": "identifier_verified_publisher_restricted",
+      "httpStatus": 403,
+      "resolvedUrl": "https://www.taylorfrancis.com/books/9781003185284/chapters/10.1201/9781003185284-9",
+      "note": "DOI verified in Crossref; publisher destination restricts access or could not be reached. Full text and findings are not verified."
+    },
+    {
+      "url": "https://doi.org/10.1007/s12053-022-10078-1",
+      "checkedAt": "2026-11-16T03:05:22.535Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://link.springer.com/article/10.1007/s12053-022-10078-1?error=cookies_not_supported&code=fe2b5563-d409-42b5-99dc-d5e56d2574af",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://civics.egohygiene.io/",
+      "checkedAt": "2026-11-16T03:05:22.687Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://civics.egohygiene.io/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://akashic.egohygiene.io/",
+      "checkedAt": "2026-11-16T03:05:23.054Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://akashic.egohygiene.io/",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    },
+    {
+      "url": "https://github.com/egohygiene",
+      "checkedAt": "2026-11-16T03:05:23.321Z",
+      "state": "accessible",
+      "httpStatus": 200,
+      "resolvedUrl": "https://github.com/egohygiene",
+      "note": "HTTP availability only; not content, scientific, or license verification."
+    }
+  ]
+}

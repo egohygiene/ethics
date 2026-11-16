@@ -861,6 +861,7 @@
       "url": "https://doi.org/10.54254/2753-7064/2026.37576",
       "sourceId": "crossref",
       "publicationDate": "2026-10-13",
+      "publicationDatePrecision": "day",
       "publicationType": "journal-article",
       "venue": "Communications in Humanities Research",
       "topics": [
@@ -884,6 +885,7 @@
       "url": "https://doi.org/10.1016/j.jnr.2026.09.002",
       "sourceId": "crossref",
       "publicationDate": "2026-10-01",
+      "publicationDatePrecision": "month",
       "publicationType": "journal-article",
       "venue": "Journal of Nursing Regulation",
       "topics": [
@@ -895,7 +897,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -907,6 +909,7 @@
       "url": "https://doi.org/10.70917/ijcisim-2026-4347",
       "sourceId": "crossref",
       "publicationDate": "2026-08-08",
+      "publicationDatePrecision": "day",
       "publicationType": "journal-article",
       "venue": "International Journal of Computer Information Systems and Industrial Management Applications",
       "topics": [
@@ -930,6 +933,7 @@
       "url": "https://doi.org/10.4324/9781003603474-35",
       "sourceId": "crossref",
       "publicationDate": "2026-06-25",
+      "publicationDatePrecision": "day",
       "publicationType": "book-chapter",
       "venue": "What Really Works in Inclusive Education",
       "topics": [
@@ -941,7 +945,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -953,6 +957,7 @@
       "url": "https://doi.org/10.4337/9781035338580.00025",
       "sourceId": "crossref",
       "publicationDate": "2026-06-09",
+      "publicationDatePrecision": "day",
       "publicationType": "book-chapter",
       "venue": "Handbook on the Global Governance of Artificial Intelligence",
       "topics": [
@@ -964,7 +969,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -976,6 +981,7 @@
       "url": "https://doi.org/10.3233/faia260476",
       "sourceId": "crossref",
       "publicationDate": "2026-05-21",
+      "publicationDatePrecision": "day",
       "publicationType": "book-chapter",
       "venue": "Frontiers in Artificial Intelligence and Applications",
       "topics": [
@@ -987,7 +993,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -999,6 +1005,7 @@
       "url": "https://doi.org/10.17509/coelite.v5i1.98157",
       "sourceId": "crossref",
       "publicationDate": "2026-04-30",
+      "publicationDatePrecision": "day",
       "publicationType": "journal-article",
       "venue": "Journal of Computer Engineering, Electronics and Information Technology",
       "topics": [
@@ -1022,6 +1029,7 @@
       "url": "https://doi.org/10.64137/31079911/ijmst-v2i1p104",
       "sourceId": "crossref",
       "publicationDate": "2026-03-20",
+      "publicationDatePrecision": "day",
       "publicationType": "journal-article",
       "venue": "International Journal of Multidisciplinary Sciences and Technology",
       "topics": [
@@ -1045,6 +1053,7 @@
       "url": "https://doi.org/10.1109/mm.2025.3643799",
       "sourceId": "crossref",
       "publicationDate": "2026-01-01",
+      "publicationDatePrecision": "month",
       "publicationType": "journal-article",
       "venue": "IEEE Micro",
       "topics": [
@@ -1068,6 +1077,7 @@
       "url": "https://doi.org/10.1007/978-3-032-07753-0_8",
       "sourceId": "crossref",
       "publicationDate": "2026-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "book-chapter",
       "venue": "Collaborations in Creativity",
       "topics": [
@@ -1079,7 +1089,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1091,6 +1101,7 @@
       "url": "https://doi.org/10.1109/inmic65900.2025.11348249",
       "sourceId": "crossref",
       "publicationDate": "2025-12-23",
+      "publicationDatePrecision": "day",
       "publicationType": "proceedings-article",
       "venue": "2025 27th International Multitopic Conference (INMIC)",
       "topics": [
@@ -1102,7 +1113,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1114,6 +1125,7 @@
       "url": "https://doi.org/10.1109/isriti68345.2025.11393149",
       "sourceId": "crossref",
       "publicationDate": "2025-12-11",
+      "publicationDatePrecision": "day",
       "publicationType": "proceedings-article",
       "venue": "2025 8th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)",
       "topics": [
@@ -1137,6 +1149,7 @@
       "url": "https://doi.org/10.1109/csitss67709.2025.11295492",
       "sourceId": "crossref",
       "publicationDate": "2025-11-20",
+      "publicationDatePrecision": "day",
       "publicationType": "proceedings-article",
       "venue": "2025 9th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)",
       "topics": [
@@ -1148,7 +1161,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1160,6 +1173,7 @@
       "url": "https://doi.org/10.1561/978-1-63828-477-220251004",
       "sourceId": "crossref",
       "publicationDate": "2025-07-23",
+      "publicationDatePrecision": "day",
       "publicationType": "book-chapter",
       "venue": "Differential Privacy in Artificial Intelligence",
       "topics": [
@@ -1171,7 +1185,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1183,6 +1197,7 @@
       "url": "https://doi.org/10.63813/mdvh6041",
       "sourceId": "crossref",
       "publicationDate": "2025-07-01",
+      "publicationDatePrecision": "day",
       "publicationType": "other",
       "venue": "Venue not supplied",
       "topics": [
@@ -1206,6 +1221,7 @@
       "url": "https://doi.org/10.64252/qwxkxm32",
       "sourceId": "crossref",
       "publicationDate": "2025-06-22",
+      "publicationDatePrecision": "day",
       "publicationType": "journal-article",
       "venue": "International Journal of Environmental Sciences",
       "topics": [
@@ -1229,6 +1245,7 @@
       "url": "https://doi.org/10.1145/3679240.3734604",
       "sourceId": "crossref",
       "publicationDate": "2025-06-17",
+      "publicationDatePrecision": "day",
       "publicationType": "proceedings-article",
       "venue": "Proceedings of the 16th ACM International Conference on Future and Sustainable Energy Systems",
       "topics": [
@@ -1240,7 +1257,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1252,6 +1269,7 @@
       "url": "https://doi.org/10.5220/0013622300004664",
       "sourceId": "crossref",
       "publicationDate": "2025-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "proceedings-article",
       "venue": "Proceedings of the 3rd International Conference on Futuristic Technology",
       "topics": [
@@ -1275,6 +1293,7 @@
       "url": "https://doi.org/10.54941/ahfe1005973",
       "sourceId": "crossref",
       "publicationDate": "2025-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "other",
       "venue": "AHFE International",
       "topics": [
@@ -1298,6 +1317,7 @@
       "url": "https://doi.org/10.1007/978-3-031-86813-9_12",
       "sourceId": "crossref",
       "publicationDate": "2025-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "book-chapter",
       "venue": "Data Science, Machine Intelligence, and Law",
       "topics": [
@@ -1309,7 +1329,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1321,6 +1341,7 @@
       "url": "https://doi.org/10.1353/sais.2024.a950957",
       "sourceId": "crossref",
       "publicationDate": "2024-09-01",
+      "publicationDatePrecision": "month",
       "publicationType": "journal-article",
       "venue": "SAIS Review of International Affairs",
       "topics": [
@@ -1332,7 +1353,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1344,6 +1365,7 @@
       "url": "https://doi.org/10.1201/9781003185284-9",
       "sourceId": "crossref",
       "publicationDate": "2024-08-23",
+      "publicationDatePrecision": "day",
       "publicationType": "book-chapter",
       "venue": "Handbook of Sharing Confidential Data",
       "topics": [
@@ -1355,7 +1377,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1367,6 +1389,7 @@
       "url": "https://doi.org/10.52058/2786-5274-2024-3(31)-73-81",
       "sourceId": "crossref",
       "publicationDate": "2024-03-17",
+      "publicationDatePrecision": "day",
       "publicationType": "journal-article",
       "venue": "Наукові інновації та передові технології",
       "topics": [
@@ -1390,6 +1413,7 @@
       "url": "https://doi.org/10.12677/ass.2024.132101",
       "sourceId": "crossref",
       "publicationDate": "2024-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "journal-article",
       "venue": "Advances in Social Sciences",
       "topics": [
@@ -1413,6 +1437,7 @@
       "url": "https://doi.org/10.1007/978-3-031-60215-3_13",
       "sourceId": "crossref",
       "publicationDate": "2024-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "book-chapter",
       "venue": "Lecture Notes in Networks and Systems",
       "topics": [
@@ -1436,6 +1461,7 @@
       "url": "https://doi.org/10.1007/s12053-022-10078-1",
       "sourceId": "crossref",
       "publicationDate": "2023-01-01",
+      "publicationDatePrecision": "month",
       "publicationType": "journal-article",
       "venue": "Energy Efficiency",
       "topics": [
@@ -1447,7 +1473,7 @@
         "status": "metadata_checked",
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
-        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
+        "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period."
       }
     },
     {
@@ -1459,6 +1485,7 @@
       "url": "https://doi.org/10.1051/shsconf/202317801019",
       "sourceId": "crossref",
       "publicationDate": "2023-01-01",
+      "publicationDatePrecision": "year",
       "publicationType": "journal-article",
       "venue": "SHS Web of Conferences",
       "topics": [
@@ -1474,5 +1501,5 @@
       }
     }
   ],
-  "contentHash": "129397a1d907a2a9d361a8cbcad46685e624c8096ce0e501940e5d784b512141"
+  "contentHash": "3ea5bc48080859a6746174cca184d2a4c818fd219c0fae11ecf84e1601ca5b85"
 }

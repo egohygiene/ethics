@@ -555,7 +555,7 @@
   "visualizations": [
     {
       "id": "chart-global",
-      "title": "The electricity footprint is growing",
+      "title": "The scale of electricity demand",
       "datasetId": "dataset-global",
       "dimension": "environment",
       "question": "How much electricity do data centers use globally?",
@@ -595,7 +595,7 @@
     },
     {
       "id": "chart-price",
-      "title": "Capability is becoming less expensive",
+      "title": "A lower price at a fixed threshold",
       "datasetId": "dataset-price",
       "dimension": "technology",
       "question": "How has price changed at a fixed benchmark threshold?",

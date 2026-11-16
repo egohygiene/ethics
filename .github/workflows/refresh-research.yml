@@ -1,0 +1,51 @@
+name: Prepare research discovery PR
+on:
+  schedule:
+    - cron: "19 9 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ethics-research-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run refresh
+      - name: Validate candidate metadata before opening a PR
+        run: node scripts/validate-candidates.mjs
+      - name: Create a review branch and pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/candidates/research.json; then
+            echo 'No material metadata change. Published evidence unchanged.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch_name="automation/research-discovery-${GITHUB_RUN_ID}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch --create "$branch_name"
+          git add -- data/candidates/research.json
+          git commit --message 'data: prepare scholarly discovery candidates for review'
+          git push --set-upstream origin "$branch_name"
+          cat > /tmp/ethics-refresh-pr.md <<'BODY'
+          Bibliographic discovery candidates from the bounded public Crossref API. Published evidence, chart observations, and the reading queue are unchanged.
+
+          Inspect topical relevance, publisher records, methods, corrections/retractions, and access rights before explicitly promoting selected records. Metadata is not a scientific finding or proof of peer review. Run the evidence checks after curation. Do not merge automatically.
+          BODY
+          gh pr create --base main --head "$branch_name" --title 'data: review new scholarly discovery candidates' --body-file /tmp/ethics-refresh-pr.md

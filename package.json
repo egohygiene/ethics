@@ -10,12 +10,13 @@
     "dev": "vite --host 0.0.0.0",
     "build": "node scripts/materialize.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "validate": "node scripts/validate.mjs",
+    "validate": "node scripts/validate.mjs && node scripts/validate-candidates.mjs",
     "test": "node --test test/*.test.mjs",
     "test:browser": "playwright test",
     "check": "npm run validate && npm test && npm run build",
     "refresh": "node --use-env-proxy scripts/refresh-research.mjs",
-    "links": "node --use-env-proxy scripts/check-links.mjs"
+    "links": "node --use-env-proxy scripts/check-links.mjs",
+    "qa:screenshots": "node scripts/capture-screenshots.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

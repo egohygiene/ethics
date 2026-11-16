@@ -9,11 +9,12 @@
     "kind",
     "releaseVersion",
     "schemaDirectory",
-    "materializedAt",
+    "evidenceAsOf",
     "files",
     "recordCounts",
     "sourceAttributions",
-    "limitations"
+    "limitations",
+    "generator"
   ],
   "properties": {
     "schemaVersion": {
@@ -31,10 +32,6 @@
     },
     "schemaDirectory": {
       "const": "schemas/v1"
-    },
-    "materializedAt": {
-      "type": "string",
-      "format": "date-time"
     },
     "files": {
       "type": "array",
@@ -108,6 +105,31 @@
         "minLength": 1
       },
       "uniqueItems": true
+    },
+    "evidenceAsOf": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generator": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "codeSha256"
+      ],
+      "properties": {
+        "id": {
+          "const": "ethics-materialize"
+        },
+        "version": {
+          "const": "1.0.0"
+        },
+        "codeSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

@@ -4,12 +4,17 @@
   "kind": "dataset-manifest",
   "releaseVersion": "0.1.0",
   "schemaDirectory": "schemas/v1",
-  "materializedAt": "2026-11-16T02:50:16Z",
+  "evidenceAsOf": "2026-11-16T02:50:16Z",
+  "generator": {
+    "id": "ethics-materialize",
+    "version": "1.0.0",
+    "codeSha256": "14f651b7c1915009dd01566d01a6eb760ed57301fbe41d34cc2054592aa93505"
+  },
   "files": [
     {
       "path": "data/v1/observatory.json",
-      "sha256": "569fe4f889371c039cc286169405600d90867392bfc7d77b3fe693beee04b981",
-      "bytes": 118877
+      "sha256": "52abed5f5ba391738901cb76e490072220f2547cfe6117e5dd10f8d746f4aefb",
+      "bytes": 119410
     }
   ],
   "recordCounts": {

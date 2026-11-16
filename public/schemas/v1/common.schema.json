@@ -73,6 +73,9 @@
               "checkedAt": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "humanReviewedAt": {
+                "type": "null"
               }
             }
           }

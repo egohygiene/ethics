@@ -2,7 +2,135 @@ import { useState } from "react";
 import { ArrowRight, CircleHelp, Scale } from "lucide-react";
 import { ExternalLink, SectionHeading, Tag } from "./Shared.jsx";
 export default function Perspectives({ data }) {
-  const [selected,setSelected]=useState(data.perspectives[0].id);
-  const topic=data.perspectives.find(t=>t.id===selected);
-  return <section id="perspectives" className="section divided-section" aria-labelledby="perspectives-title"><SectionHeading number="03" eyebrow="PERSPECTIVES" title={<span id="perspectives-title">Make room for a better question.</span>} description="Investigate disagreement without reducing people to positions. Evidence can constrain a claim without resolving every value."/><div className="mobile-topic-select"><label htmlFor="perspective-topic">Choose an ethical question</label><select id="perspective-topic" value={selected} onChange={e=>setSelected(e.target.value)}>{data.perspectives.map(t=><option value={t.id} key={t.id}>{t.title}</option>)}</select></div><div className="perspectives-layout"><div className="topic-list" role="group" aria-label="Ethical questions">{data.perspectives.map((t,i)=><button key={t.id} aria-pressed={selected===t.id} aria-controls="perspective-detail" onClick={()=>setSelected(t.id)} className={selected===t.id?"selected":""}><span>{String(i+1).padStart(2,"0")}</span>{t.title}<ArrowRight size={13}/></button>)}</div><article id="perspective-detail" className="perspective-detail" aria-live="polite"><div className="perspective-eyebrow"><Scale size={17}/><Tag tone="violet">INTERPRETIVE SYNTHESIS</Tag><span>Primary-source context · human review pending</span></div><h3>{topic.question}</h3><div className="evidence-boundaries"><div><span className="boundary-label"><span className="small-dot mint"/>WHAT THE EVIDENCE ESTABLISHES</span><p>{topic.established}</p></div><div><span className="boundary-label"><span className="small-dot amber"/>WHAT IT DOES NOT ESTABLISH</span><p>{topic.notEstablished}</p></div></div><h4 className="perspective-subhead">Strong considerations in tension</h4><div className="competing-perspectives">{topic.perspectives.map((p,i)=><div key={p.title}><span>{String(i+1).padStart(2,"0")}</span><h4>{p.title}</h4><p>{p.argument}</p></div>)}</div><div className="ethical-values"><span>Values at stake</span>{topic.values.map(value=><Tag key={value}>{value}</Tag>)}</div><div className="uncertainty-block"><CircleHelp size={16}/><div><h4>What remains open</h4><p>{topic.uncertainty}</p></div></div><details className="intervention-details" open><summary>Interventions worth investigating</summary><ul>{topic.interventions.map(item=><li key={item}>{item}</li>)}</ul></details><div className="perspective-sources"><span>EXAMINE THE PRIMARY SOURCES</span><div className="inline-links">{topic.sourceIds.map(id=>{const source=data.sources.find(s=>s.id===id);return <ExternalLink key={id} href={source.url}>{source.title}</ExternalLink>;})}</div>{topic.evidenceRefs.length>0&&<p>Related evidence records: {topic.evidenceRefs.join(", ")}. <a href="/data/v1/observatory.json">Inspect source lineage ↗</a></p>}</div></article></div></section>;
+  const [selected, setSelected] = useState(data.perspectives[0].id);
+  const topic = data.perspectives.find((t) => t.id === selected);
+  return (
+    <section
+      id="perspectives"
+      className="section divided-section"
+      aria-labelledby="perspectives-title"
+    >
+      <SectionHeading
+        number="03"
+        eyebrow="PERSPECTIVES"
+        title={
+          <span id="perspectives-title">Make room for a better question.</span>
+        }
+        description="Investigate disagreement without reducing people to positions. Evidence can constrain a claim without resolving every value."
+      />
+      <div className="mobile-topic-select">
+        <label htmlFor="perspective-topic">Choose an ethical question</label>
+        <select
+          id="perspective-topic"
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+        >
+          {data.perspectives.map((t) => (
+            <option value={t.id} key={t.id}>
+              {t.title}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="perspectives-layout">
+        <div className="topic-list" role="group" aria-label="Ethical questions">
+          {data.perspectives.map((t, i) => (
+            <button
+              key={t.id}
+              aria-pressed={selected === t.id}
+              aria-controls="perspective-detail"
+              onClick={() => setSelected(t.id)}
+              className={selected === t.id ? "selected" : ""}
+            >
+              <span>{String(i + 1).padStart(2, "0")}</span>
+              {t.title}
+              <ArrowRight size={13} />
+            </button>
+          ))}
+        </div>
+        <article
+          id="perspective-detail"
+          className="perspective-detail"
+          aria-live="polite"
+        >
+          <div className="perspective-eyebrow">
+            <Scale size={17} />
+            <Tag tone="violet">INTERPRETIVE SYNTHESIS</Tag>
+            <span>Primary-source context · human review pending</span>
+          </div>
+          <h3>{topic.question}</h3>
+          <div className="evidence-boundaries">
+            <div>
+              <span className="boundary-label">
+                <span className="small-dot mint" />
+                WHAT THE EVIDENCE ESTABLISHES
+              </span>
+              <p>{topic.established}</p>
+            </div>
+            <div>
+              <span className="boundary-label">
+                <span className="small-dot amber" />
+                WHAT IT DOES NOT ESTABLISH
+              </span>
+              <p>{topic.notEstablished}</p>
+            </div>
+          </div>
+          <h4 className="perspective-subhead">
+            Strong considerations in tension
+          </h4>
+          <div className="competing-perspectives">
+            {topic.perspectives.map((p, i) => (
+              <div key={p.title}>
+                <span>{String(i + 1).padStart(2, "0")}</span>
+                <h4>{p.title}</h4>
+                <p>{p.argument}</p>
+              </div>
+            ))}
+          </div>
+          <div className="ethical-values">
+            <span>Values at stake</span>
+            {topic.values.map((value) => (
+              <Tag key={value}>{value}</Tag>
+            ))}
+          </div>
+          <div className="uncertainty-block">
+            <CircleHelp size={16} />
+            <div>
+              <h4>What remains open</h4>
+              <p>{topic.uncertainty}</p>
+            </div>
+          </div>
+          <details className="intervention-details" open>
+            <summary>Interventions worth investigating</summary>
+            <ul>
+              {topic.interventions.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </details>
+          <div className="perspective-sources">
+            <span>EXAMINE THE PRIMARY SOURCES</span>
+            <div className="inline-links">
+              {topic.sourceIds.map((id) => {
+                const source = data.sources.find((s) => s.id === id);
+                return (
+                  <ExternalLink key={id} href={source.url}>
+                    {source.title}
+                  </ExternalLink>
+                );
+              })}
+            </div>
+            {topic.evidenceRefs.length > 0 && (
+              <p>
+                Related evidence records: {topic.evidenceRefs.join(", ")}.{" "}
+                <a href="/data/v1/observatory.json">
+                  Inspect source lineage ↗
+                </a>
+              </p>
+            )}
+          </div>
+        </article>
+      </div>
+    </section>
+  );
 }

@@ -555,7 +555,7 @@
   "visualizations": [
     {
       "id": "chart-global",
-      "title": "The electricity footprint is growing",
+      "title": "The scale of electricity demand",
       "datasetId": "dataset-global",
       "dimension": "environment",
       "question": "How much electricity do data centers use globally?",
@@ -595,7 +595,7 @@
     },
     {
       "id": "chart-price",
-      "title": "Capability is becoming less expensive",
+      "title": "A lower price at a fixed threshold",
       "datasetId": "dataset-price",
       "dimension": "technology",
       "question": "How has price changed at a fixed benchmark threshold?",
@@ -2016,7 +2016,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "month"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2039,7 +2040,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2062,7 +2064,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2085,7 +2088,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2108,7 +2112,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "year"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2131,7 +2136,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2154,7 +2160,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2177,7 +2184,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2200,7 +2208,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2223,7 +2232,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "year"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2246,7 +2256,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "month"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2269,7 +2280,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "day"
     },
     {
       "schemaVersion": "1.0.0",
@@ -2292,7 +2304,8 @@
         "checkedAt": "2026-11-16T02:22:56.069Z",
         "humanReviewedAt": null,
         "note": "Crossref bibliographic metadata only. Peer review, full text, findings, and topical relevance require human assessment. Partial dates use the first day of the supplied period. Title/venue screened for a first-release reading queue by the implementation agent; no conclusion or venue-quality endorsement is inferred."
-      }
+      },
+      "publicationDatePrecision": "month"
     }
   ],
   "perspectives": [
