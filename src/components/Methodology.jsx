@@ -1,6 +1,7 @@
-import { Database, ShieldCheck } from "lucide-react";
+import { Database, ShieldCheck, Info } from "lucide-react";
 import { classificationLabel, formatDate } from "../lib/evidence-view.js";
 import { ExternalLink, SectionHeading, Tag } from "./Shared.jsx";
+import Disclosure from "./Disclosure.jsx";
 const definitions = {
   observed_fact: "A directly documented record, within its stated scope.",
   documented_estimate:
@@ -20,12 +21,8 @@ export default function Methodology({ data }) {
       <SectionHeading
         number="06"
         eyebrow="METHODOLOGY"
-        title={
-          <span id="methodology-title">
-            Trust is something you can inspect.
-          </span>
-        }
-        description="Every view should show what it knows, how it knows, and where the evidence stops."
+        title={<span id="methodology-title">Follow the evidence.</span>}
+        description="A clear path from original source to the chart in front of you."
       />
       <div className="method-flow" aria-label="Evidence pipeline">
         {[
@@ -42,10 +39,21 @@ export default function Methodology({ data }) {
           </span>
         ))}
       </div>
-      <div className="methodology-grid">
-        <div className="methodology-card">
-          <ShieldCheck size={22} />
-          <h3>Different claims. Different labels.</h3>
+      <div className="method-brief">
+        <ShieldCheck size={20} />
+        <p>
+          <strong>Human evidence review is pending.</strong> Data-center totals
+          include non-AI workloads. Price is not energy. Projections remain
+          conditional.
+        </p>
+      </div>
+      <div className="methodology-folds">
+        <Disclosure
+          title="What the evidence labels mean"
+          description="Facts, estimates, projections, interpretation, personal values, and open questions"
+          icon={ShieldCheck}
+          meta="6 labels"
+        >
           <dl className="claim-definitions">
             {Object.entries(definitions).map(([key, value]) => (
               <div key={key}>
@@ -66,10 +74,12 @@ export default function Methodology({ data }) {
               </div>
             ))}
           </dl>
-        </div>
-        <div className="methodology-card">
-          <Database size={22} />
-          <h3>A fresh build is not fresh evidence.</h3>
+        </Disclosure>
+        <Disclosure
+          title="Dates, freshness & software build"
+          description="A fresh build does not make historical evidence new"
+          icon={Database}
+        >
           <dl className="clock-definitions">
             <dt>Source data period</dt>
             <dd>
@@ -108,26 +118,31 @@ export default function Methodology({ data }) {
             </dd>
           </dl>
           <p className="small-note">
-            Exact per-dataset clocks are inside each chart's provenance panel
-            and the versioned JSON. Source publication dates are preserved as
-            calendar dates.
+            Exact dataset clocks are in each chart's provenance. Publication
+            dates retain their original calendar date.
           </p>
-        </div>
-      </div>
-      <div className="methodology-principles">
-        <h3>Our evidence boundaries</h3>
-        <p>
-          All-data-center electricity is not AI-only electricity. A scenario
-          range is not a confidence interval. API price is not energy.
-          Occupational exposure is not observed job loss. A device authorization
-          is not proof of net population benefit. More transparency is not a
-          complete account of ethical conduct.
-        </p>
-        <p>
-          Missing, conflicting, unknown, unavailable, unresearched, and
-          inapplicable data remain explicit. We do not assign moral scores or
-          infer private motives.
-        </p>
+        </Disclosure>
+        <Disclosure
+          title="Evidence boundaries & missing data"
+          description="What these measurements cannot establish"
+          icon={Info}
+        >
+          <div className="methodology-principles">
+            <h3>Our evidence boundaries</h3>
+            <p>
+              All-data-center electricity is not AI-only electricity. A scenario
+              range is not a confidence interval. API price is not energy.
+              Occupational exposure is not observed job loss. A device
+              authorization is not proof of net population benefit. More
+              transparency is not a complete account of ethical conduct.
+            </p>
+            <p>
+              Missing, conflicting, unknown, unavailable, unresearched, and
+              inapplicable data remain explicit. We do not assign moral scores
+              or infer private motives.
+            </p>
+          </div>
+        </Disclosure>
       </div>
       <details className="source-registry">
         <summary>

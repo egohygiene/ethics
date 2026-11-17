@@ -1,3 +1,5 @@
+import Disclosure from "./Disclosure.jsx";
+import { ScenarioBars } from "./EvidenceVisuals.jsx";
 import { useId, useState } from "react";
 import {
   Check,
@@ -80,7 +82,8 @@ function Pipeline({ trial, paused }) {
       viewBox="0 0 440 285"
       className={`pipeline-graph ${paused ? "paused" : ""}`}
       role="img"
-      aria-labelledby={`${uid}-title ${uid}-desc`}
+      aria-labelledby={`${uid}-title`}
+      aria-describedby={`${uid}-desc`}
     >
       <title id={`${uid}-title`}>
         {trial ? "Repeated trial-and-error" : "Intentional creative pipeline"}
@@ -241,6 +244,7 @@ function NumericInput({ name, label, values, setValues, integer = false }) {
           if (
             Number.isFinite(value) &&
             value >= 0 &&
+            value <= (integer ? 100 : 10000) &&
             (!integer || Number.isInteger(value))
           )
             setValues((v) => ({ ...v, [name]: value }));
@@ -309,27 +313,33 @@ export default function Workflow() {
           on the actual tools, settings, and boundary; line lengths and node
           sizes are conceptual.
         </p>
-        <div className="formula-grid">
-          <div>
-            <span>INTENTIONAL WORKFLOW</span>
-            <code>
-              E_intentional = E_image + E_text
-              <br /> + N_intentional × E_video + E_other
-            </code>
+        <Disclosure
+          title="The equations & evaluation boundary"
+          description="All preparation, attempts, processing, and accepted outputs"
+          className="formula-disclosure"
+        >
+          <div className="formula-grid">
+            <div>
+              <span>INTENTIONAL WORKFLOW</span>
+              <code>
+                E_intentional = E_image + E_text
+                <br /> + N_intentional × E_video + E_other
+              </code>
+            </div>
+            <div>
+              <span>TRIAL-AND-ERROR WORKFLOW</span>
+              <code>
+                E_trial = E_initial_prompt
+                <br /> + N_trial × E_video + E_other_trial
+              </code>
+            </div>
           </div>
-          <div>
-            <span>TRIAL-AND-ERROR WORKFLOW</span>
-            <code>
-              E_trial = E_initial_prompt
-              <br /> + N_trial × E_video + E_other_trial
-            </code>
+          <div className="workflow-definition">
+            <strong>Energy per accepted output</strong>
+            <span>=</span>
+            <span>Total workflow energy / Number of accepted outputs</span>
           </div>
-        </div>
-        <div className="workflow-definition">
-          <strong>Energy per accepted output</strong>
-          <span>=</span>
-          <span>Total workflow energy / Number of accepted outputs</span>
-        </div>
+        </Disclosure>
       </div>
       <div className="workflow-insight">
         <span className="small-dot mint" />
@@ -446,6 +456,7 @@ export default function Workflow() {
             is undefined.
           </p>
         </details>
+        <ScenarioBars results={results} />
         <div className="calculator-results" aria-live="polite">
           <div>
             <p>Intentional path</p>
@@ -478,6 +489,10 @@ export default function Workflow() {
           </div>
         </div>
       </div>
+      <p className="workflow-rebound">
+        <strong>Keep total demand in view.</strong> Lower energy per output can
+        still mean higher aggregate demand if usage grows.
+      </p>
       <details className="research-method">
         <summary>How would we test this in the real world?</summary>
         <div className="method-columns">

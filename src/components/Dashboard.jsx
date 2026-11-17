@@ -1,6 +1,7 @@
 import { Info, SearchCheck } from "lucide-react";
 import { dimensions } from "../data/dimensions.js";
 import EvidenceChart from "./EvidenceChart.jsx";
+import { ReleaseCoverage } from "./EvidenceVisuals.jsx";
 import { ExternalLink, SectionHeading } from "./Shared.jsx";
 export default function Dashboard({ data, dimension, setDimension }) {
   const charts = data.visualizations.filter(
@@ -19,6 +20,7 @@ export default function Dashboard({ data, dimension, setDimension }) {
         title={<span id="dashboard-title">Evidence before conclusions.</span>}
         description="A small, inspectable starting point. Source estimates, projections, and limitations stay visible."
       />
+      <ReleaseCoverage data={data} />
       <div className="dashboard-toolbar">
         <label htmlFor="dimension-filter">Evidence lens</label>
         <select
