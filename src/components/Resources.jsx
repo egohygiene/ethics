@@ -1,3 +1,4 @@
+import Disclosure from "./Disclosure.jsx";
 import { useState } from "react";
 import { ArrowDown, BookOpen, Search } from "lucide-react";
 import { filterResources, topicNames } from "../lib/discovery-view.js";
@@ -6,7 +7,7 @@ export default function Resources({ data }) {
   const [query, setQuery] = useState("");
   const [expanded, setExpanded] = useState(false);
   const records = filterResources(data.organizations, query);
-  const visible = expanded ? records : records.slice(0, 9);
+  const visible = expanded ? records : records.slice(0, 6);
   return (
     <section
       id="resources"
@@ -54,16 +55,15 @@ export default function Resources({ data }) {
                   {resource.title}
                 </ExternalLink>
               </h3>
-              <p>{resource.description}</p>
-              <details>
-                <summary>Access & reuse</summary>
+              <Disclosure title="About this resource & access">
+                <p>{resource.description}</p>
                 <p>{resource.accessNotes}</p>
                 {resource.akashicUrl && (
                   <ExternalLink href={resource.akashicUrl}>
                     Also curated in Akashic
                   </ExternalLink>
                 )}
-              </details>
+              </Disclosure>
             </article>
           ))}
         </div>

@@ -1,0 +1,71 @@
+{
+  "note": "Default DOM layout, all disclosure controls closed in the upgraded view. Both snapshots use the same reviewed data. This is a layout inspection, not a study of reader comprehension.",
+  "before": [
+    {
+      "width": 1440,
+      "height": 9593,
+      "visibleParagraphs": 79,
+      "openDetails": 1,
+      "sections": {
+        "overview": 1472,
+        "dashboard": 906,
+        "workflow": 1634,
+        "perspectives": 1087,
+        "research": 1407,
+        "resources": 1259,
+        "methodology": 1044,
+        "author": 629
+      }
+    },
+    {
+      "width": 390,
+      "height": 18290,
+      "visibleParagraphs": 79,
+      "openDetails": 1,
+      "sections": {
+        "overview": 2467,
+        "dashboard": 1940,
+        "workflow": 2356,
+        "perspectives": 1765,
+        "research": 3144,
+        "resources": 2992,
+        "methodology": 2288,
+        "author": 1005
+      }
+    }
+  ],
+  "after": [
+    {
+      "width": 1440,
+      "height": 9585,
+      "visibleParagraphs": 51,
+      "openDetails": 0,
+      "sections": {
+        "overview": 1505,
+        "dashboard": 1743,
+        "workflow": 1896,
+        "perspectives": 910,
+        "research": 1239,
+        "resources": 816,
+        "methodology": 771,
+        "author": 550
+      }
+    },
+    {
+      "width": 390,
+      "height": 14752,
+      "visibleParagraphs": 51,
+      "openDetails": 0,
+      "sections": {
+        "overview": 2526,
+        "dashboard": 2438,
+        "workflow": 2459,
+        "perspectives": 1142,
+        "research": 2264,
+        "resources": 1751,
+        "methodology": 1127,
+        "author": 713
+      }
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import Disclosure from "./Disclosure.jsx";
+import { topicCoverage } from "../lib/digest-view.js";
 import { useMemo, useState } from "react";
 import { ArrowDown, FileText, FlaskConical, Search, X } from "lucide-react";
 import {
@@ -20,10 +22,15 @@ export default function Research({ data }) {
   const topics = Object.keys(topicNames).filter((t) =>
     data.publications.some((p) => p.topics.includes(t)),
   );
+  const coverage = topicCoverage(
+    filterResearch(data.publications, { query, type, sort }),
+    topics,
+  );
+  const maxTopicCount = Math.max(1, ...coverage.map((t) => t.count));
   const types = Object.keys(publicationTypes).filter((t) =>
     data.publications.some((p) => p.publicationType === t),
   );
-  const visible = expanded ? records : records.slice(0, 6);
+  const visible = expanded ? records : records.slice(0, 3);
   const latest = data.publications
     .map((p) => p.retrievedAt)
     .sort()
@@ -51,14 +58,45 @@ export default function Research({ data }) {
         description="Follow engineering methods, public-interest research, and specific ways to reduce harm. Discovery is the start of evaluation."
       />
       <div className="research-status">
-        <FlaskConical size={17} />
+        <FlaskConical size={18} />
         <p>
-          A reading queue, not a collection of proven solutions. Crossref
-          supplies bibliographic metadata; titles and venues were screened by
-          the implementation agent. Full-text findings and peer review remain
-          unverified.
+          <strong>Metadata only.</strong> Peer review and scientific findings
+          are unverified.
         </p>
         <span>Retrieved {formatDate(latest)}</span>
+      </div>
+      <div className="topic-coverage-heading">
+        <h3>Find a field to explore</h3>
+        <span>
+          Reading-queue coverage · papers can appear in more than one topic
+        </span>
+      </div>
+      <div
+        className="topic-coverage"
+        role="group"
+        aria-label="Research topic coverage"
+      >
+        {coverage.map((t) => (
+          <button
+            key={t.id}
+            aria-pressed={topic === t.id}
+            onClick={() => {
+              setTopic(topic === t.id ? "all" : t.id);
+              setExpanded(false);
+            }}
+          >
+            <span>
+              {topicNames[t.id]}
+              <strong>
+                {t.count}
+                <span className="sr-only"> publications</span>
+              </strong>
+            </span>
+            <span className="topic-coverage-track" aria-hidden="true">
+              <i style={{ width: `${(t.count / maxTopicCount) * 100}%` }} />
+            </span>
+          </button>
+        ))}
       </div>
       <div className="research-controls">
         <label className="search-field">
@@ -144,7 +182,6 @@ export default function Research({ data }) {
               <h3>
                 <ExternalLink href={p.url}>{p.title}</ExternalLink>
               </h3>
-              <p className="paper-venue">{p.venue}</p>
               <div className="paper-topics">
                 {p.topics.map((t) => (
                   <span key={t}>{topicNames[t]}</span>
@@ -154,6 +191,7 @@ export default function Research({ data }) {
                 <span>Metadata only · peer review unverified</span>
                 <details>
                   <summary>Record details</summary>
+                  <p className="paper-venue">{p.venue}</p>
                   <dl className="metadata">
                     <dt>DOI</dt>
                     <dd>
@@ -194,23 +232,30 @@ export default function Research({ data }) {
           Show all {records.length} publications <ArrowDown size={14} />
         </button>
       )}
-      <div className="report-strip">
-        <div>
-          <FileText size={18} />
-          <h3>Primary reports & reference research</h3>
+      <Disclosure
+        title="Primary reports & reference research"
+        meta={reports.length}
+        icon={FileText}
+        className="report-disclosure"
+      >
+        <div className="report-strip">
+          <div>
+            <FileText size={18} />
+            <h3>Primary reports & reference research</h3>
+          </div>
+          {reports.map((s) => (
+            <ExternalLink href={s.url} key={s.id}>
+              {s.title}
+              <span>
+                {s.freshness.sourcePublishedAt
+                  ? formatDate(s.freshness.sourcePublishedAt)
+                  : "Publication date in source"}{" "}
+                · official report
+              </span>
+            </ExternalLink>
+          ))}
         </div>
-        {reports.map((s) => (
-          <ExternalLink href={s.url} key={s.id}>
-            {s.title}
-            <span>
-              {s.freshness.sourcePublishedAt
-                ? formatDate(s.freshness.sourcePublishedAt)
-                : "Publication date in source"}{" "}
-              · official report
-            </span>
-          </ExternalLink>
-        ))}
-      </div>
+      </Disclosure>
       <details className="research-disclosure">
         <summary>What inclusion means, and how this queue changes</summary>
         <p>

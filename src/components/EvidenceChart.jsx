@@ -7,6 +7,7 @@ import {
   classificationLabel,
 } from "../lib/evidence-view.js";
 import { ExternalLink, Tag } from "./Shared.jsx";
+import { comparisonFor, formatRatio } from "../lib/digest-view.js";
 export default function EvidenceChart({ data, chart }) {
   const { dataset, metric, rows, sources, evidence } = chartView(data, chart);
   const uid = useId().replaceAll(":", "");
@@ -15,6 +16,7 @@ export default function EvidenceChart({ data, chart }) {
     plot = 306,
     height = rows.length * 61 + 44;
   const scale = (v) => left + (v / chart.axisMax) * plot;
+  const comparison = comparisonFor(data, chart.id);
   const isPrice = metric.id === "metric-inference-price";
   return (
     <article
@@ -45,7 +47,8 @@ export default function EvidenceChart({ data, chart }) {
         className="quantitative-chart"
         viewBox={`0 0 ${width} ${height}`}
         role="img"
-        aria-labelledby={`${uid}-title ${uid}-desc`}
+        aria-labelledby={`${uid}-title`}
+        aria-describedby={`${uid}-desc`}
       >
         <title id={`${uid}-title`}>{metric.title}</title>
         <desc id={`${uid}-desc`}>
@@ -170,6 +173,15 @@ export default function EvidenceChart({ data, chart }) {
           );
         })}
       </svg>
+      {comparison && (
+        <div className="chart-comparison">
+          <strong>{formatRatio(comparison)}</strong>
+          <span>
+            {comparison.label}
+            <small>Derived from rounded source endpoints</small>
+          </span>
+        </div>
+      )}
       <p className="chart-takeaway">{chart.takeaway}</p>
       <div className="chart-source-line">
         <FileText size={13} />
@@ -224,6 +236,16 @@ export default function EvidenceChart({ data, chart }) {
               "Pending independent human review",
             )}
           </dd>
+          {comparison && (
+            <>
+              <dt>Derived ratio</dt>
+              <dd>
+                {comparison.numerator} / {comparison.denominator};
+                source-endpoint-ratio v1. Rounded for display; not a new
+                measurement.
+              </dd>
+            </>
+          )}
           <dt>Transform</dt>
           <dd>
             {chart.transformId} v{chart.transformVersion}; source endpoints only

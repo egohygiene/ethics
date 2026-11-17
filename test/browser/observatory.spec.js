@@ -104,7 +104,7 @@ test("all ten perspectives and discovery filters retain usable empty states", as
     .getByRole("button", { name: "Clear filters", exact: true })
     .first()
     .click();
-  await expect(page.locator(".paper-card")).toHaveCount(6);
+  await expect(page.locator(".paper-card")).toHaveCount(3);
   await page.getByRole("button", { name: "Show all 13 publications" }).click();
   await expect(page.locator(".paper-card")).toHaveCount(13);
   await page
@@ -211,4 +211,60 @@ test("failed snapshot loading offers a working retry instead of invented data", 
   fail = false;
   await page.getByRole("button", { name: "Retry loading" }).click();
   await expect(page.getByRole("heading", { name: heading })).toBeVisible();
+});
+
+test("long explanations start closed and keyboard disclosure preserves access", async ({
+  page,
+}) => {
+  await load(page);
+  await expect(page.locator("main details[open]")).toHaveCount(0);
+  await expect(page.locator("#chart-global table")).toBeHidden();
+  await page.locator("#chart-global summary").focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#chart-global table")).toBeVisible();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#chart-global table")).toBeHidden();
+  const explanation = page.locator(".perspective-folds details").first();
+  await explanation.locator("summary").click();
+  await expect(explanation.locator(".disclosure-content")).toBeVisible();
+  await page.locator(".topic-list button").nth(1).click();
+  await expect(page.locator(".perspective-folds details[open]")).toHaveCount(0);
+  await expect(page.locator(".hypothesis-label")).toBeVisible();
+  await expect(page.locator(".data-review-note")).toContainText(
+    "human evidence review is pending",
+  );
+});
+
+test("topic bars filter the reviewed reading queue and scenario bars follow assumptions", async ({
+  page,
+}) => {
+  await load(page);
+  await expect(page.locator(".snapshot-bars")).toHaveCount(3);
+  await expect(page.locator(".release-coverage")).toContainText(
+    "5 documented estimates",
+  );
+  const topic = page
+    .locator(".topic-coverage button")
+    .filter({ hasText: "Privacy & data governance" });
+  await topic.click();
+  await expect(
+    page.getByRole("combobox", { name: "Research topic", exact: true }),
+  ).toHaveValue("privacy");
+  await expect(page.locator(".paper-card")).toHaveCount(2);
+  await topic.click();
+  await expect(
+    page.getByRole("combobox", { name: "Research topic", exact: true }),
+  ).toHaveValue("all");
+  await expect(page.locator(".scenario-figure svg")).toHaveAccessibleName(
+    "Conceptual workflow comparison",
+  );
+  await page
+    .getByText("Edit all relative costs & accepted-output counts", {
+      exact: true,
+    })
+    .click();
+  await page
+    .getByLabel("Accepted intentional outputs", { exact: true })
+    .fill("0");
+  await expect(page.locator(".scenario-figure svg")).toContainText("Undefined");
 });

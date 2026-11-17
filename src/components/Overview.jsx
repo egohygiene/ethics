@@ -2,7 +2,9 @@ import { useState } from "react";
 import { ArrowDown, ArrowRight, Check, Network } from "lucide-react";
 import { dimensions } from "../data/dimensions.js";
 import { dimensionIcons, SectionHeading } from "./Shared.jsx";
-import { formatValue } from "../lib/evidence-view.js";
+import { formatValue, chartView } from "../lib/evidence-view.js";
+import { SnapshotBars } from "./EvidenceVisuals.jsx";
+import Disclosure from "./Disclosure.jsx";
 function Constellation() {
   return (
     <div className="constellation" aria-hidden="true">
@@ -197,6 +199,18 @@ export default function Overview({ data, onDimension }) {
           </div>
           <h3>Global data-center electricity, 2024</h3>
           <p>IEA estimate · all data centers, including non-AI</p>
+          <SnapshotBars
+            {...{
+              rows: chartView(
+                data,
+                data.visualizations.find((c) => c.id === "chart-global"),
+              ).rows,
+              max: data.visualizations.find((c) => c.id === "chart-global")
+                .axisMax,
+              unit: "TWh / year",
+              title: "Data-center electricity estimates and projections",
+            }}
+          />
           <span className="snapshot-link">
             Examine the scope <ArrowUpRightInline />
           </span>
@@ -216,6 +230,17 @@ export default function Overview({ data, onDimension }) {
           </div>
           <h3>U.S. data-center projection, 2028</h3>
           <p>Berkeley Lab via DOE · scenario range</p>
+          <SnapshotBars
+            {...{
+              rows: chartView(
+                data,
+                data.visualizations.find((c) => c.id === "chart-us"),
+              ).rows,
+              max: data.visualizations.find((c) => c.id === "chart-us").axisMax,
+              unit: "TWh / year",
+              title: "Data-center electricity estimates and projections",
+            }}
+          />
           <span className="snapshot-link">
             Understand the range <ArrowUpRightInline />
           </span>
@@ -235,6 +260,18 @@ export default function Overview({ data, onDimension }) {
           </div>
           <h3>Price at a fixed benchmark threshold</h3>
           <p>AI Index · USD/million tokens · Nov 2022–Oct 2024</p>
+          <SnapshotBars
+            {...{
+              rows: chartView(
+                data,
+                data.visualizations.find((c) => c.id === "chart-price"),
+              ).rows,
+              max: data.visualizations.find((c) => c.id === "chart-price")
+                .axisMax,
+              unit: "USD / million tokens",
+              title: "Selected inference price endpoints",
+            }}
+          />
           <span className="snapshot-link">
             Inspect the comparison <ArrowUpRightInline />
           </span>
@@ -270,10 +307,12 @@ export default function Overview({ data, onDimension }) {
             );
           })}
         </div>
-        <div
+        <Disclosure
           id="lens-detail"
+          key={lens.id}
           className={`lens-detail ${lens.color}`}
-          aria-live="polite"
+          title={`Explore ${lens.title}`}
+          description="What we can measure, what is uncertain, and what can improve"
         >
           <div className="lens-detail-head">
             <h3>{lens.title}</h3>
@@ -299,7 +338,7 @@ export default function Overview({ data, onDimension }) {
               <p>{lens.improving}</p>
             </div>
           </div>
-        </div>
+        </Disclosure>
       </div>
     </section>
   );
