@@ -268,3 +268,61 @@ test("topic bars filter the reviewed reading queue and scenario bars follow assu
     .fill("0");
   await expect(page.locator(".scenario-figure svg")).toContainText("Undefined");
 });
+
+
+test("artist-first guide opens evidence and philosophy without replacing provenance", async ({
+  page,
+}) => {
+  await load(page);
+  await expect(page.getByRole("heading", { name: /See the whole picture/ })).toBeVisible();
+  const guide = page.locator(".visual-guide");
+  await expect(guide.locator(".visual-story")).toHaveCount(3);
+  await guide.getByRole("link", { name: /Follow the footprint/ }).click();
+  await expect(page).toHaveURL(/#dashboard$/);
+  await expect(page.locator(".evidence-chart")).toHaveCount(3);
+  await expect(page.locator("#dashboard")).toContainText("Independent human");
+  await guide.getByRole("link", { name: /A word becomes a world/ }).click();
+  await expect(page).toHaveURL(/#author$/);
+});
+
+test("curated organization gallery is clearly independent and uses local logos", async ({
+  page,
+}) => {
+  await load(page);
+  const wall = page.locator(".organization-constellation");
+  await expect(wall.locator(".organization-tile")).toHaveCount(8);
+  await expect(wall).toContainText("not sponsorship or endorsement");
+  const logos = wall.locator('img[src^="/organization-marks/"]');
+  await expect(logos).toHaveCount(2);
+  for (const path of [
+    "/organization-marks/huggingface.svg",
+    "/organization-marks/opensource-initiative.svg",
+  ]) {
+    const response = await page.request.get(path);
+    expect(response.ok()).toBe(true);
+    expect(await response.text()).toContain("<svg");
+  }
+  await expect(
+    wall.getByRole("link", { name: /CodeCarbon/ }),
+  ).toHaveAttribute("href", "https://docs.codecarbon.io/latest/");
+});
+
+test("mobile dock exposes accessible quick links and secondary sections", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await load(page);
+  const dock = page.getByRole("navigation", { name: "Mobile quick navigation" });
+  await expect(dock).toBeVisible();
+  await expect(dock.getByRole("link", { name: "Evidence" })).toBeVisible();
+  const more = dock.getByRole("button", { name: "More sections" });
+  await more.click();
+  await expect(more).toHaveAttribute("aria-expanded", "true");
+  await dock.getByRole("link", { name: "Workflow experiment" }).click();
+  await expect(page).toHaveURL(/#workflow$/);
+  await expect(more).toHaveAttribute("aria-expanded", "false");
+  for (const width of [320, 375, 390, 430, 760]) {
+    await page.setViewportSize({ width, height: 844 });
+    await noOverflow(page);
+  }
+});
