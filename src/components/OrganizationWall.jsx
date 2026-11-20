@@ -110,3 +110,32 @@ export default function OrganizationWall({ organizations }) {
     </div>
   );
 }
+
+
+export function OrganizationRibbon({ organizations }) {
+  const byId = new Map(organizations.map((entry) => [entry.id, entry]));
+  const selected = spotlights.slice(0, 6)
+    .map((item) => ({ ...item, record: byId.get(item.id) }))
+    .filter(({ record }) => record);
+  if (!selected.length) return null;
+  return (
+    <div className="organization-ribbon" aria-label="Organizations working on AI ethics">
+      <div className="organization-ribbon-intro">
+        <strong>The work is already happening.</strong>
+        <span>Independent resources · not sponsors</span>
+      </div>
+      <div className="organization-ribbon-links">
+        {selected.map(({ record, mark, logo }) => (
+          <a key={record.id} href={record.url} aria-label={`Explore ${record.title}`}>
+            {logo ? <img src={logo} width="22" height="22" alt="" loading="lazy" /> :
+              <span aria-hidden="true">{mark}</span>}
+            <span>{record.title}</span>
+          </a>
+        ))}
+      </div>
+      <a className="organization-ribbon-all" href="#resources">
+        All resources <ArrowRight size={14} aria-hidden="true" />
+      </a>
+    </div>
+  );
+}
