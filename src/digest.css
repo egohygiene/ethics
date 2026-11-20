@@ -1805,3 +1805,92 @@ thead th {
   .visual-story, .organization-tile { transition: none; }
   .visual-story:hover, .organization-tile:hover { transform: none; }
 }
+
+
+/* A quiet, independently curated organization ribbon, never an endorsement wall. */
+.organization-ribbon {
+  display: grid;
+  grid-template-columns: minmax(164px, 205px) minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  margin: 0 0 28px;
+  padding: 17px 18px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--violet) 3%, var(--surface));
+}
+.organization-ribbon-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.organization-ribbon-intro strong {
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.organization-ribbon-intro > span { font-size: 10px; color: var(--muted); }
+.organization-ribbon-links {
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scroll-snap-type: x proximity;
+  gap: 8px;
+  padding-block: 5px;
+  min-width: 0;
+}
+.organization-ribbon-links a {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  max-width: 155px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: var(--bg);
+  scroll-snap-align: start;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.organization-ribbon-links a:hover {
+  background: var(--raised);
+  border-color: var(--violet);
+  color: var(--violet);
+}
+.organization-ribbon-links a > span:first-child {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  flex: none;
+  color: var(--mint);
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  font-weight: 700;
+  font-size: 12px;
+}
+.organization-ribbon-links img { display: block; flex: none; }
+.organization-ribbon-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  font-size: 11px;
+  color: var(--violet);
+  font-weight: 600;
+}
+@media (max-width: 970px) {
+  .organization-ribbon { grid-template-columns: minmax(130px, 170px) minmax(0, 1fr); }
+  .organization-ribbon-all { display: none; }
+}
+@media (max-width: 760px) {
+  .organization-ribbon { display: block; padding: 15px; }
+  .organization-ribbon-intro { margin-bottom: 10px; }
+  .organization-ribbon-links { margin-right: -15px; padding-right: 15px; }
+  .organization-ribbon-links a { min-height: 44px; }
+}
