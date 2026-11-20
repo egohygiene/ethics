@@ -7,6 +7,7 @@ import {
   Code2,
   Layers3,
   Moon,
+  Menu,
   Network,
   Orbit,
   Scale,
@@ -30,6 +31,18 @@ const navigation = [
   { id: "methodology", label: "Methodology", icon: BookOpen },
   { id: "author", label: "Author's Perspective", icon: UserRound },
 ];
+const mobileDock = [
+  { id: "overview", label: "Discover", icon: Compass },
+  { id: "dashboard", label: "Evidence", icon: Layers3 },
+  { id: "perspectives", label: "Questions", icon: Scale },
+  { id: "research", label: "Research", icon: FlaskConical },
+];
+const mobileMore = [
+  { id: "workflow", label: "Workflow experiment" },
+  { id: "resources", label: "Resources & organizations" },
+  { id: "methodology", label: "Methodology & sources" },
+  { id: "author", label: "Author\x27s perspective" },
+];
 function initialTheme() {
   try {
     const saved = localStorage.getItem("ethics-theme");
@@ -44,6 +57,7 @@ function initialTheme() {
 export default function App() {
   const [theme, setTheme] = useState(initialTheme);
   const [active, setActive] = useState("overview");
+  const [moreOpen, setMoreOpen] = useState(false);
   const [dimension, setDimension] = useState("all");
   const [data, setData] = useState(null);
   const [error, setError] = useState(false);
@@ -100,8 +114,8 @@ export default function App() {
       },
       { rootMargin: "-8% 0px -65% 0px", threshold: 0 },
     );
-    for (const item of navigation) {
-      const element = document.getElementById(item.id);
+    for (const id of [...navigation.map((item) => item.id), "workflow"]) {
+      const element = document.getElementById(id);
       if (element) observer.observe(element);
     }
     return () => observer.disconnect();
@@ -164,7 +178,7 @@ export default function App() {
           <span>
             The observatory <span className="breadcrumb-separator">/</span>{" "}
             <span className="breadcrumb-current">
-              {navigation.find((n) => n.id === active)?.label}
+              {navigation.find((n) => n.id === active)?.label ?? "Workflow experiment"}
             </span>
           </span>
           <div>
@@ -244,6 +258,46 @@ export default function App() {
           </span>
         </footer>
       </div>
+      <nav className="mobile-dock" aria-label="Mobile quick navigation">
+        <div className="mobile-more-panel" id="mobile-more-panel" hidden={!moreOpen}>
+          <span className="mobile-more-heading">Keep exploring</span>
+          {mobileMore.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              aria-current={active === id ? "location" : undefined}
+              onClick={() => { setActive(id); setMoreOpen(false); }}
+            >
+              {label} <ArrowUpRight size={14} aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+        <div className="mobile-dock-items">
+          {mobileDock.map(({ id, label, icon: Icon }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              aria-current={active === id ? "location" : undefined}
+              onClick={() => { setActive(id); setMoreOpen(false); }}
+            >
+              <Icon size={19} aria-hidden="true" />
+              <span>{label}</span>
+            </a>
+          ))}
+          <button
+            type="button"
+            className={moreOpen || mobileMore.some(({ id }) => id === active) ? "active" : ""}
+            aria-expanded={moreOpen}
+            aria-controls="mobile-more-panel"
+            aria-label="More sections"
+            onClick={() => setMoreOpen((open) => !open)}
+            onKeyDown={(event) => { if (event.key === "Escape") setMoreOpen(false); }}
+          >
+            <Menu size={19} aria-hidden="true" />
+            <span>More</span>
+          </button>
+        </div>
+      </nav>
     </div>
   );
 }
