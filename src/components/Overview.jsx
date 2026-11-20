@@ -5,6 +5,7 @@ import { dimensionIcons, SectionHeading } from "./Shared.jsx";
 import { formatValue, chartView } from "../lib/evidence-view.js";
 import { SnapshotBars } from "./EvidenceVisuals.jsx";
 import Disclosure from "./Disclosure.jsx";
+import VisualGuide from "./VisualGuide.jsx";
 function Constellation() {
   return (
     <div className="constellation" aria-hidden="true">
@@ -183,6 +184,7 @@ export default function Overview({ data, onDimension }) {
         </p>
         <span>OUR GUIDING PRINCIPLE</span>
       </div>
+      <VisualGuide />
       <div className="snapshot-grid">
         <a
           href="#chart-global"
