@@ -1,4 +1,5 @@
 import Disclosure from "./Disclosure.jsx";
+import OrganizationWall from "./OrganizationWall.jsx";
 import { useState } from "react";
 import { ArrowDown, BookOpen, Search } from "lucide-react";
 import { filterResources, topicNames } from "../lib/discovery-view.js";
@@ -36,7 +37,8 @@ export default function Resources({ data }) {
           />
         </label>
       </SectionHeading>
-      <div className="results-count" aria-live="polite">
+      <OrganizationWall organizations={data.organizations} />
+      <div id="resource-directory" className="results-count" aria-live="polite">
         {records.length} resources
         {visible.length < records.length ? ` · showing ${visible.length}` : ""}
       </div>
